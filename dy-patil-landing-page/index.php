@@ -1257,6 +1257,7 @@
                                     <input type="text" maxlength="10" style="width: 100%;" id="phone" class="form-control"
                                         placeholder="Phone Number" name="phone" autocomplete="off" required>
                                 </div>
+                                <p id="note" class="d-none" style="color: #111 !important;font-size: 0.735rem;text-align: left;"></p>
                                 <div class="form-group mb-3" id="otpdiv" style="display: none;">
                                     <input type="text" maxlength="6" class="form-control" id="otp" placeholder="Enter OTP" name="otp"
                                         autocomplete="off" required>
@@ -1282,7 +1283,6 @@
                                 <input type="hidden" id="lead_source" value="DLP-DYP">
                                 <?php
                                 $query_params = [];
-                                parse_str(parse_url($current_url, PHP_URL_QUERY), $query_params);
                                 $utm_source = isset($query_params['gad_source']) ? htmlspecialchars($query_params['gad_source'] || $query_params['utm_source']) : '';
                                 $utm_medium = isset($query_params['gclid']) ? htmlspecialchars($query_params['gclid']) : '';
                                 $utm_campaign = isset($query_params['utm_campaign']) ? htmlspecialchars($query_params['utm_campaign']) : '';
@@ -1386,6 +1386,8 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
         });
 
         $(document).ready(function() {
+            localStorage.setItem('verification_flag', '0');
+
             $('.specializations').slick({
                 dots: true,
                 autoplay: true,
@@ -1438,12 +1440,21 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
             $("#modalLeadForm").on("submit", function(e) {
                 e.preventDefault();
 
+                // 🔍 Check verification flag
+                const verificationFlag = localStorage.getItem("verification_flag");
+
+                if (verificationFlag !== "1") {
+                    alert("Please verify your mobile number before submitting the form.");
+                    return; // ❌ Stop submission
+                }
+
                 // Basic validation
                 const phone = $("#phone").val().trim();
                 if (!/^\d{10}$/.test(phone)) {
                     alert("Please enter a valid 10-digit mobile number.");
                     return;
                 }
+
 
                 const data = {
                     name: $("#name").val().trim(),
@@ -1539,7 +1550,6 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
             });
         }
 
-
         document.addEventListener("DOMContentLoaded", function() {
             var phoneInput = document.getElementById("phone");
             var otp = document.getElementById("otp");
@@ -1559,14 +1569,23 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
             });
         });
 
+        function randomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
         function generateOTP() {
             var mobile_no = $("#phone").val();
+            var verification_code = randomNumber(100000, 999999);
+
+            localStorage.setItem('otp', verification_code);
+
             $.ajax({
                 type: "POST",
-                url: 'https://insityapp.com/api/generate-otp',
+                url: '../send_otp.php',
                 dataType: "json",
                 data: {
-                    mobile_no: mobile_no
+                    mobile_no: mobile_no,
+                    otp: verification_code
                 },
                 success: function(response) {
                     var result = response.status;
@@ -1574,11 +1593,9 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
                         $("#otpdiv").show();
                         $("#phone").val(mobile_no);
                         document.getElementById("otpdiv").style.display = "flex";
+                        $('#note').removeClass('d-none');
 
-                        // Update and show the universal modal with the OTP sent message
-                        $('#otpModalLabel').text('OTP Sent');
-                        $('#otpModalBody').text('OTP has been sent to your mobile number.');
-                        $('#otpModal').modal('show');
+                        $('#note').text('OTP has been sent to your mobile number.');
                     } else {
                         document.getElementById("sub_val").disabled = false;
                     }
@@ -1589,33 +1606,17 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
         function otp_verify() {
             var mobile_no = $("#phone").val();
             var otp = $("#otp").val();
+            var storedOTP = localStorage.getItem('otp');
 
-            $.ajax({
-                type: "POST",
-                url: 'https://insityapp.com/api/validate-otp',
-                dataType: "json",
-                data: {
-                    mobile_no: mobile_no,
-                    otp: otp
-                },
-                success: function(response) {
-                    var result = response.status;
-                    if (result == 1) {
-                        // Hide the OTP div
-                        $("#otpdiv").hide();
-
-                        // Update and show the universal modal with the success message
-                        $('#otpModalLabel').text('OTP Verification');
-                        $('#otpModalBody').text('OTP Verification successfully completed.');
-                        $('#otpModal').modal('show');
-                    } else {
-                        // Update and show the universal modal with the invalid OTP message
-                        $('#otpModalLabel').text('Invalid OTP');
-                        $('#otpModalBody').text('The OTP you entered is invalid. Please try again.');
-                        $('#otpModal').modal('show');
-                    }
-                }
-            });
+            if (storedOTP === otp) {
+                document.getElementById("otpdiv").style.display = "none";
+                $('#note').text('OTP verified successfully.');
+                localStorage.setItem('verification_flag', '1');
+            } else {
+                $('#otpdiv').val('');
+                $('#note').text('Wrong OTP.');
+                localStorage.setItem('verification_flag', '0');
+            }
         }
     </script>
 </body>

@@ -1229,7 +1229,6 @@ $testimonials = json_decode($jsonData, true);
                                 <input type="hidden" id="lead_source3" value="DLP-MANIPAL">
                                 <?php
                                 $query_params = [];
-                                parse_str(parse_url($current_url, PHP_URL_QUERY), $query_params);
                                 $utm_source = isset($query_params['gad_source']) ? htmlspecialchars($query_params['gad_source'] || $query_params['utm_source']) : '';
                                 $utm_medium = isset($query_params['gclid']) ? htmlspecialchars($query_params['gclid']) : '';
                                 $utm_campaign = isset($query_params['utm_campaign']) ? htmlspecialchars($query_params['utm_campaign']) : '';
