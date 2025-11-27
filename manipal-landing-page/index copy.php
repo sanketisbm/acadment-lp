@@ -25,10 +25,10 @@ $testimonials = json_decode($jsonData, true);
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="assets/css/index.css">
-
+    
     <!-- Meta Pixel Code -->
-
-    <script>
+  
+     <script>
         ! function(f, b, e, v, n, t, s) {
             if (f.fbq) return;
             n = f.fbq = function() {
@@ -52,19 +52,14 @@ $testimonials = json_decode($jsonData, true);
         <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=647703537631450&ev=PageView&noscript=1" />
     </noscript>
     <!-- End Meta Pixel Code -->
-
-
-
+    
+    
+    
     <script type="text/javascript">
-        (function(c, l, a, r, i, t, y) {
-            c[a] = c[a] || function() {
-                (c[a].q = c[a].q || []).push(arguments)
-            };
-            t = l.createElement(r);
-            t.async = 1;
-            t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0];
-            y.parentNode.insertBefore(t, y);
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "u7dona5zdi");
     </script>
 </head>
@@ -179,17 +174,6 @@ $testimonials = json_decode($jsonData, true);
                                     </span>
                                     <input type="tel" id="phone" class="form-control form-control-lg border-start-0" placeholder="Enter your mobile number" maxlength="10" required="">
                                 </div>
-
-                                <p id="note" class="d-none" style="color: #ffffffff !important;font-size: 0.735rem;text-align: left;"></p>
-                                <div class="mb-3" id="otpdiv" style="display: none;">
-                                    <input type="text" maxlength="6" class="form-control form-control-lg" id="otp" placeholder="Enter OTP" name="otp"
-                                        autocomplete="off" required>
-                                </div>
-
-                                <div class="mb-3">
-                                    <input type="email" id="email" class="form-control form-control-lg" placeholder="Enter your email" required="">
-                                </div>
-
 
                                 <!-- State Dropdown -->
                                 <div class="mb-3">
@@ -1128,11 +1112,6 @@ $testimonials = json_decode($jsonData, true);
                                     </div>
                                 </div>
 
-                                <div class="col-md-6" id="otpdiv2" style="display: none;">
-                                    <input type="text" maxlength="6" class="form-control form-control" id="otp2" placeholder="Enter OTP" name="otp2"
-                                        autocomplete="off" required>
-                                </div>
-                                <p id="note2" class="d-none" style="color: #111 !important;font-size: 0.735rem;text-align: left;"></p>
                                 <!-- State -->
                                 <div class="col-md-6">
                                     <label class="form-label">State <span class="text-danger">*</span></label>
@@ -1166,7 +1145,7 @@ $testimonials = json_decode($jsonData, true);
                                 <input type="hidden" id="widget_name2" value="Acadment">
                                 <input type="hidden" id="lead_origin2" value="API">
                                 <input type="hidden" id="lead_source2" value="DLP-MANIPAL">
-                                <?php
+                                 <?php
                                 $query_params = [];
                                 parse_str(parse_url($current_url, PHP_URL_QUERY), $query_params);
                                 $utm_source = isset($query_params['gad_source']) ? htmlspecialchars($query_params['gad_source'] || $query_params['utm_source']) : '';
@@ -1220,19 +1199,14 @@ $testimonials = json_decode($jsonData, true);
                             <p>Please fill in your details below. </p>
                             <form id="modalLeadForm" novalidate class="formPanel">
                                 <div class="form-group mb-3">
-                                    <input type="text" class="form-control" id="name3" placeholder="Enter your Name" required>
+                                    <input type="text" class="form-control" id="name3"  placeholder="Enter your Name" required>
                                 </div>
                                 <div class="form-group mb-3">
-                                    <input type="email" class="form-control" id="email3" placeholder="Enter your Email" required>
+                                    <input type="email" class="form-control" id="email3"  placeholder="Enter your Email" required>
                                 </div>
                                 <div class="form-group mb-3" style="display: flex;">
-                                    <input type="text" maxlength="10" style="width: 100%;" id="phone3" class="form-control"
-                                        placeholder="Phone Number" autocomplete="off" required>
-                                </div>
-                                <p id="note3" class="d-none" style="color: #fffdfdff !important;font-size: 0.735rem;text-align: left;"></p>
-                                <div class="form-group mb-3" id="otpdiv3" style="display: none;">
-                                    <input type="text" maxlength="6" class="form-control form-control" id="otp3" placeholder="Enter OTP" name="otp3"
-                                        autocomplete="off" required>
+                                    <input type="text" maxlength="10" style="width: 100%;" id="phone3"  class="form-control"
+                                        placeholder="Phone Number"  autocomplete="off" required>
                                 </div>
                                 <div class="form-group mb-3">
                                     <select class="form-control form-select state3" id="state3" required>
@@ -1244,13 +1218,13 @@ $testimonials = json_decode($jsonData, true);
                                         <option value>Select City</option>
                                     </select>
                                 </div>
+                             
 
-
-                                <!-- Hidden fields -->
-                                <input type="hidden" id="country3" value="INDIA">
+                                 <!-- Hidden fields -->
+                                <input type="hidden" id="country3"  value="INDIA">
                                 <input type="hidden" id="course3" value="Master of Business Administration (MBA)">
-                                <input type="hidden" id="level3" value="Postgraduate">
-                                <input type="hidden" id="widget_name3" value="Acadment">
+                                <input type="hidden" id="level3" value= "Postgraduate">
+                                <input type="hidden" id="widget_name3"  value="Acadment">
                                 <input type="hidden" id="lead_origin3" value="API">
                                 <input type="hidden" id="lead_source3" value="DLP-MANIPAL">
                                 <?php
@@ -1486,14 +1460,6 @@ $testimonials = json_decode($jsonData, true);
             $("#programLeadForm").on("submit", function(e) {
                 e.preventDefault();
 
-                // 🔍 Check verification flag
-                const verificationFlag = localStorage.getItem("verification_flag");
-
-                if (verificationFlag !== "1") {
-                    alert("Please verify your mobile number before submitting the form.");
-                    return; // ❌ Stop submission
-                }
-
                 if (!validateForm()) return;
 
                 const data = {
@@ -1556,14 +1522,6 @@ $testimonials = json_decode($jsonData, true);
             $("#secondaryLeadForm").on("submit", function(e) {
                 e.preventDefault();
 
-                // 🔍 Check verification flag
-                const verificationFlag = localStorage.getItem("verification_flag");
-
-                if (verificationFlag !== "1") {
-                    alert("Please verify your mobile number before submitting the form.");
-                    return; // ❌ Stop submission
-                }
-
                 // Basic validation
                 const phone = $("#phone2").val().trim();
                 if (!/^\d{10}$/.test(phone)) {
@@ -1615,19 +1573,9 @@ $testimonials = json_decode($jsonData, true);
                 });
             });
 
-            // Form submit
+             // Form submit
             $("#modalLeadForm").on("submit", function(e) {
                 e.preventDefault();
-                
-
-                // 🔍 Check verification flag
-                const verificationFlag = localStorage.getItem("verification_flag");
-
-                if (verificationFlag !== "1") {
-                    alert("Please verify your mobile number before submitting the form.");
-                    return; // ❌ Stop submission
-                }
-
 
                 // Basic validation
                 const phone = $("#phone3").val().trim();
@@ -1862,203 +1810,6 @@ $testimonials = json_decode($jsonData, true);
                 });
             }
         });
-
-        document.addEventListener("DOMContentLoaded", function() {
-            var phoneInput = document.getElementById("phone");
-            var otp = document.getElementById("otp");
-
-            var phoneInput2 = document.getElementById("phone2");
-            var otp2 = document.getElementById("otp2");
-
-            var phoneInput3 = document.getElementById("phone3");
-            var otp3 = document.getElementById("otp3");
-
-            phoneInput.addEventListener("input", function() {
-                var phoneNumber = phoneInput.value;
-                if (phoneNumber.length === 10) {
-                    generateOTP();
-                }
-            });
-
-            otp.addEventListener("input", function() {
-                var otpNumber = otp.value;
-                if (otpNumber.length === 6) {
-                    otp_verify();
-                }
-            });
-
-            phoneInput2.addEventListener("input", function() {
-                var phoneNumber2 = phoneInput2.value;
-                if (phoneNumber2.length === 10) {
-                    generateOTP2();
-                }
-            });
-
-            otp2.addEventListener("input", function() {
-                var otpNumber2 = otp2.value;
-                if (otpNumber2.length === 6) {
-                    otp_verify2();
-                }
-            });
-
-
-            phoneInput3.addEventListener("input", function() {
-                var phoneNumber3 = phoneInput3.value;
-                if (phoneNumber3.length === 10) {
-                    generateOTP3();
-                }
-            });
-
-            otp3.addEventListener("input", function() {
-                var otpNumber3 = otp3.value;
-                if (otpNumber3.length === 6) {
-                    otp_verify3();
-                }
-            });
-        });
-
-        function randomNumber(min, max) {
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
-
-        function generateOTP() {
-            var mobile_no = $("#phone").val();
-            var verification_code = randomNumber(100000, 999999);
-
-            localStorage.setItem('otp', verification_code);
-
-            $.ajax({
-                type: "POST",
-                url: '../send_otp.php',
-                dataType: "json",
-                data: {
-                    mobile_no: mobile_no,
-                    otp: verification_code
-                },
-                success: function(response) {
-                    var result = response.status;
-                    if (result == 1) {
-                        $("#otpdiv").show();
-                        $("#phone").val(mobile_no);
-                        document.getElementById("otpdiv").style.display = "flex";
-                        $('#note').removeClass('d-none');
-
-                        $('#note').text('OTP has been sent to your mobile number.');
-                    } else {
-                        document.getElementById("sub_val").disabled = false;
-                    }
-                }
-            });
-        }
-
-        function generateOTP2() {
-            var mobile_no = $("#phone2").val();
-            var verification_code = randomNumber(100000, 999999);
-
-            localStorage.setItem('otp', verification_code);
-
-            $.ajax({
-                type: "POST",
-                url: '../send_otp.php',
-                dataType: "json",
-                data: {
-                    mobile_no: mobile_no,
-                    otp: verification_code
-                },
-                success: function(response) {
-                    var result = response.status;
-                    if (result == 1) {
-                        $("#otpdiv2").show();
-                        $("#phone2").val(mobile_no);
-                        document.getElementById("otpdiv2").style.display = "flex";
-                        $('#note2').removeClass('d-none');
-
-                        $('#note2').text('OTP has been sent to your mobile number.');
-                    } else {
-                        document.getElementById("sub_val2").disabled = false;
-                    }
-                }
-            });
-        }
-
-        function generateOTP3() {
-            var mobile_no = $("#phone3").val();
-            var verification_code = randomNumber(100000, 999999);
-
-            localStorage.setItem('otp', verification_code);
-
-            $.ajax({
-                type: "POST",
-                url: '../send_otp.php',
-                dataType: "json",
-                data: {
-                    mobile_no: mobile_no,
-                    otp: verification_code
-                },
-                success: function(response) {
-                    var result = response.status;
-                    if (result == 1) {
-                        $("#otpdiv3").show();
-                        $("#phone3").val(mobile_no);
-                        document.getElementById("otpdiv3").style.display = "flex";
-                        $('#note3').removeClass('d-none');
-
-                        $('#note3').text('OTP has been sent to your mobile number.');
-                    } else {
-                        document.getElementById("sub_val").disabled = false;
-                    }
-                }
-            });
-        }
-
-        function otp_verify() {
-            var mobile_no = $("#phone").val();
-            var otp = $("#otp").val();
-            var storedOTP = localStorage.getItem('otp');
-
-            if (storedOTP === otp) {
-                document.getElementById("otpdiv").style.display = "none";
-                $('#note').text('OTP verified successfully.');
-                localStorage.setItem('verification_flag', '1');
-            } else {
-                $('#otpdiv').val('');
-                $('#note').text('Wrong OTP.');
-                localStorage.setItem('verification_flag', '0');
-            }
-        }
-
-        function otp_verify2() {
-            var mobile_no = $("#phone2").val();
-            var otp = $("#otp2").val();
-            var storedOTP = localStorage.getItem('otp');
-
-            if (storedOTP === otp) {
-                document.getElementById("otpdiv2").style.display = "none";
-                $('#note2').text('OTP verified successfully.');
-                localStorage.setItem('verification_flag', '1');
-            } else {
-                $('#otpdiv2').val('');
-                $('#note2').text('Wrong OTP.');
-                localStorage.setItem('verification_flag', '0');
-            }
-        }
-
-
-        function otp_verify3() {
-            var mobile_no = $("#phone3").val();
-            var otp = $("#otp3").val();
-            var storedOTP = localStorage.getItem('otp');
-
-            if (storedOTP === otp) {
-                document.getElementById("otpdiv3").style.display = "none";
-                $('#note3').text('OTP verified successfully.');
-                localStorage.setItem('verification_flag', '1');
-            } else {
-                $('#otpdiv3').val('');
-                $('#note3').text('Wrong OTP.');
-                localStorage.setItem('verification_flag', '0');
-            }
-        }
     </script>
 
 
