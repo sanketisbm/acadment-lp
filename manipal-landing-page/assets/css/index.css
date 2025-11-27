@@ -1,0 +1,1443 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  /* font-family: "HelveticaNowDisplay", Helvetica, Arial, sans-serif; */
+  font-family: "Queen";
+
+  font-size: 18px;
+  color: #575757;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+/*Start Responsive css */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1720px;
+  }
+}
+@media (max-width: 1919.98px) {
+  .container {
+    max-width: 1720px;
+  }
+}
+@media (max-width: 1699.98px) {
+  .container {
+    max-width: 1420px;
+  }
+}
+@media (max-width: 1599.98px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .container {
+    max-width: 1140px !important;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1720px;
+  }
+}
+@media (max-width: 1919.98px) {
+  .container {
+    max-width: 1720px;
+  }
+}
+@media (max-width: 1699.98px) {
+  .container {
+    max-width: 1420px;
+  }
+}
+@media (max-width: 1599.98px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: calc(100% - 6.15vw);
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: calc(100% - 8.4vw);
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 600px;
+  }
+}
+@media (max-width: 575.98px) {
+  .container {
+    max-width: unset;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 390px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+/* ---------- Notice Marquee ---------- */
+.notice-bar {
+  position: relative;
+  overflow: hidden;
+}
+
+.notice-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 25s linear infinite;
+}
+
+.notice-bar:hover .notice-text {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* ---------- Header adjustments ---------- */
+header {
+  background: transparent;
+  z-index: 9999;
+}
+
+.container.bg-light {
+  background-color: #f7f6f6 !important;
+}
+
+/* ---------- Logo ---------- */
+.site-logo {
+  max-width: 170px;
+  height: auto;
+}
+
+/* ---------- Buttons ---------- */
+.btn-warning {
+  background-color: #01458e;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: #024fa1;
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 992px) {
+  /* Hide number on tablet & mobile */
+  .contact-number {
+    display: none !important;
+  }
+
+  .download-brochere {
+    display: none !important;
+  }
+
+  .apply-now {
+    display: block !important;
+  }
+
+  .site-logo {
+    max-width: 150px;
+  }
+
+  header .btn {
+    font-size: 14px;
+    padding: 8px 24px;
+  }
+
+  .form-box {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .dow-broch {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .site-logo {
+    max-width: 130px;
+  }
+
+  header .btn {
+    font-size: 12px;
+    padding: 6px 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-image-2 {
+    display: none;
+  }
+}
+/* main css */
+/* Banner Base */
+.banner-section {
+  background: url("../images/Grids.png") no-repeat right top;
+  background-size: cover;
+  position: relative;
+}
+
+/* Doodle Animation */
+.doodle {
+  position: absolute;
+  top: 0;
+  right: 20%;
+  width: auto;
+  height: 80%;
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 5000;
+  animation: draw 2s ease-out forwards;
+  z-index: 0;
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Highlight circle around "Online MBA" */
+.highlight-text::after {
+  content: "";
+  position: absolute;
+  background: url("../images/Circle.svg") no-repeat center/contain;
+  top: -10px;
+  left: -12px;
+  width: 110%;
+  height: 110%;
+  z-index: -1;
+}
+
+/* Scholarship Band */
+.scholarship-band {
+  background: linear-gradient(98deg, #3b4096 0%, #151419 30%);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 991.98px) {
+  .banner-section {
+    background-position: center top;
+  }
+  .highlight-text::after {
+    top: -6px;
+    left: -8px;
+  }
+}
+/* container */
+.programLeadForm {
+  background: linear-gradient(150deg, #0522d2 0%, #09143e 60%);
+  border-radius: 15px 0 0 15px;
+  width: 100%;
+  color: #fff;
+}
+
+/* inputs */
+.programLeadForm .form-control {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #fff;
+  color: #000;
+  font-size: 12px;
+}
+.programLeadForm .form-control:focus {
+  border-color: #01458e;
+  box-shadow: 0 0 0 0.25rem rgba(242, 103, 34, 0.25);
+}
+
+.programLeadForm .form-select {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #fff;
+  color: #000;
+  font-size: 12px;
+}
+
+/* button (keeps your brown tone) */
+.btn-brown {
+  background-color: #bf2ea1 !important;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+  opacity: 0.9;
+}
+.btn-brown:hover {
+  background-color: #6d155a !important;
+  opacity: 1;
+}
+
+.btn-brown:disabled {
+  color: #fff;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ---- Footer row (like the first image) ---- */
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 16px;
+  margin-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.deadline .label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2px;
+}
+.deadline .time {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+
+/* vertical divider between the two blocks */
+.footer-divider {
+  width: 1px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.18);
+  display: inline-block;
+}
+
+/* ---- Circular meter (matches style/weight of first image) ---- */
+.seats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-circle svg {
+  width: 35px;
+  transform: rotate(-90deg); /* start from top */
+}
+
+.progress-circle .track {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.25);
+  stroke-width: 3;
+}
+
+.progress-circle .bar {
+  fill: none;
+  stroke: #ffffff; /* white arc, like the screenshot */
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 0 100; /* will be set via JS below or keep static */
+}
+
+/* center text inside the circle */
+
+.progress-text .pct {
+  font-weight: 800;
+  font-size: 14px;
+}
+.progress-text .cap {
+  font-size: 10px;
+  opacity: 0.95;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .programLeadForm {
+    border-radius: 15px;
+  }
+  .form-footer {
+    gap: 12px;
+  }
+}
+
+/* stats section css */
+
+/* Section background */
+/* Section background */
+.stat-strip {
+  background: #f4f7fa;
+  padding: 20px 0;
+}
+
+/* Each item */
+.stat-item {
+  padding: 15px 20px;
+  border-right: 1px solid #09143e;
+  border-bottom: 1px solid transparent;
+  display: flex;
+  align-items: center;
+}
+
+/* Remove last border */
+.stat-item:nth-child(4n) {
+  border-right: none;
+}
+
+/* Labels & Values */
+.stat-label {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #09143e;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.stat-value {
+  font-size: 20px;
+  color: #01458e;
+  line-height: 1.2;
+}
+.text-orange {
+  color: #01458e !important;
+}
+
+/* ===== MOBILE & TABLET FIX (2x2 GRID) ===== */
+@media (max-width: 778px) {
+  .stat-item {
+    border-right: 1px solid #09143e;
+    border-bottom: 1px solid rgba(9, 20, 62, 0.1);
+    padding: 12px 15px;
+  }
+
+  /* Remove right border for every 2nd item in a row */
+  .stat-item:nth-child(2n) {
+    border-right: none;
+  }
+
+  /* Remove bottom border from last two */
+  .stat-item:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+
+  .stat-value {
+    font-size: 16px;
+  }
+  .stat-label {
+    font-size: 15px;
+  }
+  .stat-item img {
+    width: 20px;
+  }
+}
+
+/* ranking css */
+/* Container and Title */
+/* Container and Title */
+.top-ranking-section {
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-family: "Queens", serif;
+  font-weight: 500;
+  color: #151419;
+  text-transform: capitalize;
+}
+
+/* Individual Card Styling */
+.rank-card-container .rank-line-item {
+  background-color: #f7f6f6;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-right: 20px;
+  position: relative;
+}
+
+.rank-card-img img {
+  width: 100%;
+  height: 150px;
+  /* height: auto; */
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.rank-card-title {
+  font-size: 16px;
+  color: #151419;
+  margin-top: 16px;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .rank-line-item {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* ---- DOTS (diamond style, centered) ---- */
+.slick-dots {
+  position: static;
+  padding-top: 16px;
+}
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+}
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+}
+.slick-dots li button:before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #d0d0d0;
+  transform: rotate(45deg);
+  border-radius: 2px;
+  opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+  background: #151419;
+}
+
+/* keep arrows placed nicely on smaller screens */
+@media (max-width: 992px) {
+  .logo-content .slick-arrow {
+    top: -48px;
+  }
+  .logo-content .slick-prev {
+    right: 56px;
+  }
+}
+
+/* make space above the card and allow the badge to sit outside */
+.rank-card-container .rank-line-item {
+  overflow: visible; /* so the ribbon can hang outside */
+  padding-top: 28px; /* room under the ribbon */
+}
+
+/* --- centered ribbon badge --- */
+.rank-badge {
+  position: absolute;
+  top: -14px; /* sits slightly above the card */
+  left: 50%;
+  transform: translateX(-50%); /* center it */
+  display: none; /* JS will show when text exists */
+  z-index: 3;
+}
+
+/* main ribbon chip */
+.rank-badge .rank-top {
+  background: #d32f2f; /* red like screenshot */
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  padding: 0 16px;
+  border-radius: 8px; /* pill ends */
+  position: relative;
+  display: inline-block;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* small darker "fold" tails under both ends */
+.rank-badge .rank-top::before,
+.rank-badge .rank-top::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-top: 8px solid #b1282a; /* darker red tail */
+}
+.rank-badge .rank-top::before {
+  left: 8px;
+  border-left: 8px solid transparent;
+}
+.rank-badge .rank-top::after {
+  right: 8px;
+  border-right: 8px solid transparent;
+}
+
+/* (keep your arrow & dots CSS as you already added) */
+
+/* advantage section css */
+/* section wrapper + doodle */
+.guided-mentorship {
+  position: relative;
+  overflow: hidden;
+}
+.guided-mentorship .doodle {
+  position: absolute;
+  inset: 0; /* cover section */
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* title with circle highlight over the word */
+.circle-word {
+  position: relative;
+  display: inline-block;
+  padding: 8px 4px;
+  z-index: 1;
+}
+.circle-word::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 115%;
+  height: 115%;
+  transform: translate(-50%, -50%);
+  background: url("https://muj.onlinemanipal.com/wp-content/themes/mujonline/assets/images/manipal-advantage/support-circle.svg")
+    no-repeat center / contain;
+  z-index: -1;
+}
+
+/* diamond bullets */
+.feature-list {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+.feature-list li {
+  position: relative;
+  margin-bottom: 1rem;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #151419;
+}
+.feature-list li::before {
+  content: "";
+  position: absolute;
+  left: -1.1rem;
+  top: 0.6rem;
+  width: 6px;
+  height: 6px;
+  background: #333;
+  transform: rotate(45deg);
+}
+
+/* image wrapper + star */
+.figure-wrap {
+  position: relative;
+}
+.figure-wrap .pink-star {
+  position: absolute;
+  left: -12px;
+  top: -12px;
+  width: 40px;
+}
+
+/* curriculam css */
+/* section */
+.curriculum {
+  background: #151419;
+  color: #fff;
+  padding: 80px 0;
+}
+
+/* title */
+.curriculum .section-title {
+  color: #fff;
+}
+
+/* tabs + brochure */
+.curriculum .tabs-wrap {
+  gap: 1rem;
+}
+.curriculum .nav-pills .nav-link {
+  background: #151419;
+  border: 1px solid #575757;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+}
+.curriculum .nav-pills .nav-link.active {
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+}
+
+/* button */
+.curriculum .dl-btn {
+  background: #fff;
+  color: #151419;
+  border-radius: 999px;
+  font-weight: 700;
+  padding: 0.6rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* common card (desktop) */
+.sem-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  color: #151419;
+}
+.sem-chip {
+  display: inline-block;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-family: "Queens", serif;
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 1rem;
+  color: #151419;
+}
+.bg-blue {
+  background: #9ddaf0;
+}
+.bg-lime {
+  background: #bdcd36;
+}
+.bg-yellow {
+  background: #f7d21e;
+}
+.bg-pink {
+  background: #f6a7b7;
+}
+
+/* mobile accordion look */
+@media (max-width: 991.98px) {
+  .sem-accordion .accordion-button {
+    background: transparent;
+    color: #151419;
+    border-radius: 12px;
+    padding: 14px 48px 14px 16px;
+    font-weight: 700;
+  }
+  .sem-accordion .accordion-item {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
+    border: 0;
+  }
+  .sem-accordion .accordion-button::after {
+    width: 28px;
+    height: 28px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    background-image: none;
+    transform: none;
+  }
+  .sem-accordion .accordion-button.collapsed::after {
+    background-image: none;
+  }
+  .sem-accordion .accordion-body {
+    background: #fff;
+  }
+  /* colored header bars */
+  .sem-accordion .hdr {
+    padding: 0.6rem 1rem;
+    font-weight: 700;
+    border-radius: 12px;
+  }
+}
+
+/* hide accordion on lg+, show cards */
+@media (min-width: 992px) {
+  .sem-accordion {
+    display: none;
+  }
+}
+
+/* hide desktop row on mobile */
+@media (max-width: 991.98px) {
+  .sem-desktop {
+    display: none;
+  }
+  .curriculum .tabs-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .curriculum .dl-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ===== Mobile-only: pill headers like the mock ===== */
+@media (max-width: 991.98px) {
+  /* each accordion card spacing */
+  .sem-accordion .accordion-item {
+    border: 0;
+    background: transparent;
+    margin-bottom: 14px;
+  }
+
+  /* the colored pill header */
+  .sem-accordion .accordion-button.hdr {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 16px 56px 16px 18px; /* roomy left, space for chevron on right */
+    border-radius: 16px; /* fat pill corners */
+    border: 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    color: #151419;
+    font-family: "Queens", serif;
+    font-size: 24px;
+    line-height: 1.1;
+  }
+
+  /* remove Bootstrap default backgrounds/arrows */
+  .sem-accordion .accordion-button:not(.collapsed) {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+  }
+  .sem-accordion .accordion-button:focus {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  .sem-accordion .accordion-button::after {
+    content: "⮟";
+    position: absolute;
+    right: 18px;
+    font-size: 20px;
+    color: #151419;
+    background: #fff;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  .sem-accordion .accordion-button:not(.collapsed)::after {
+    transform: rotate(90deg);
+  }
+
+  /* body (white panel) right under the pill header */
+  .sem-accordion .accordion-collapse {
+    border: 0;
+  }
+  .sem-accordion .accordion-body {
+    background: #fff;
+    border-radius: 12px;
+    margin-top: 10px;
+    padding: 18px 16px;
+  }
+
+  /* list readability on mobile */
+  .sem-accordion .sem-list li {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  /* colors for pills (reuse your classes) */
+  .sem-accordion .hdr.bg-blue {
+    background: #9ddaf0;
+  }
+  .sem-accordion .hdr.bg-lime {
+    background: #bdcd36;
+  }
+  .sem-accordion .hdr.bg-yellow {
+    background: #f7d21e;
+  }
+  .sem-accordion .hdr.bg-pink {
+    background: #f6a7b7;
+  }
+
+  /* top area spacing + brochure button full width on mobile */
+  .curriculum .tabs-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .curriculum .dl-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.course-fee-section {
+  padding-bottom: 4.125vw;
+}
+
+.course-fee-container {
+  padding: 20px;
+}
+
+.course-fee {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #f7f6f6;
+  padding: 32px 30px;
+}
+
+.left {
+  width: 50%;
+}
+
+.course-text {
+  font-size: 20px;
+  color: #151419;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.course-price {
+  font-size: 80px;
+  color: #151419;
+  font-weight: 500;
+  margin: 0;
+}
+
+.msg-text {
+  font-size: 18px;
+  color: #151419;
+  font-weight: 400;
+}
+
+.right {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.fee-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-details {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 24px;
+  margin-bottom: 10px;
+}
+
+.semester-fee {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.semester-price {
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.taxes {
+  font-size: 18px;
+  color: #575757;
+}
+
+.note-text {
+  display: flex;
+  gap: 14px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.note {
+  font-size: 20px;
+  color: #101010;
+  font-weight: 500;
+}
+
+.scholarship-container {
+  margin-top: 40px;
+}
+
+.scholarship-title {
+  font-size: 24px;
+  color: #151419;
+}
+
+.scholarship-wrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.scholarship-detail {
+  display: flex;
+  background: #f7f6f6;
+  border-radius: 20px;
+  padding: 32px 24px;
+  gap: 16px;
+  align-items: center;
+  width: 50%;
+}
+
+.scholarship-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #151419;
+}
+
+.description {
+  font-size: 16px;
+  color: #575757;
+}
+
+.learn-more {
+  font-size: 16px;
+  color: #01458e;
+  cursor: pointer;
+}
+
+.apply-now-btn {
+  background-color: #01458e;
+  color: #fff;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.bg-light-purple {
+  background-color: #ccc1ff;
+}
+
+.bg-light-gray {
+  background-color: #f7f6f6;
+}
+
+/* testimonial css */
+.testimonial {
+  background: #fff;
+}
+
+/* Title */
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #151419;
+}
+
+/* Card */
+.testimonial-card {
+  border: 1px solid rgba(21, 20, 25, 0.06);
+  border-radius: 12px;
+  background: #f9f9f9;
+  overflow: hidden;
+  transition: transform 0.18s ease;
+  height: 100%;
+  padding: 1rem;
+}
+.testimonial-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image: fixed height, full width, cover */
+
+.testimonial-card img.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 5px;
+  background: #fff;
+}
+
+/* card text */
+.card-text {
+  color: #151419;
+}
+
+/* read-more style */
+.read-more {
+  font-weight: 600;
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Section background like screenshot */
+.admission-process {
+  background: url("../images/muj-univ-bldg.webp") center/cover no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+/* Horizontal connector line (desktop) / vertical line (mobile) */
+.process-line {
+  position: relative;
+}
+.process-line::before {
+  content: "";
+  position: absolute;
+  left: 1.2rem; /* aligns with number circles on mobile */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.5);
+}
+@media (min-width: 992px) {
+  .process-line::before {
+    left: 0;
+    right: 0;
+    top: 1.2rem;
+    bottom: auto;
+    height: 2px;
+    width: auto;
+    background: rgba(255, 255, 255, 0.6);
+  }
+}
+
+/* Each step */
+.step {
+  position: relative;
+  margin-bottom: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  .step {
+    width: 100%;
+  }
+}
+
+/* Number circle */
+.num {
+  width: 38px;
+  height: 38px;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 1.25rem;
+  z-index: 2;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .num {
+    left: auto;
+    top: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Card style (dark translucent with notch) */
+.step-card {
+  background: rgba(21, 20, 25, 0.8);
+  border: 1px solid #575757;
+  color: #f7f6f6;
+  border-radius: 20px;
+  padding: 1.25rem 1.5rem;
+  margin-left: 74px; /* clears number on mobile */
+  max-width: 500px;
+}
+.step-card::before,
+.step-card::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 100%;
+  border-style: solid;
+}
+.step-card::before {
+  border-width: 12px;
+  border-color: transparent #575757 transparent transparent;
+  top: 42px;
+}
+.step-card::after {
+  border-width: 11px;
+  border-color: transparent rgba(21, 20, 25, 0.8) transparent transparent;
+  top: 43px;
+}
+
+.step-title {
+  font-size: 1.75rem; /* ~32px */
+  color: #fff;
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+}
+
+/* Desktop sizing/spacing to match UI */
+@media (min-width: 992px) {
+  .step {
+    margin-bottom: 3rem !important;
+  }
+
+  .step-card {
+    top: 55px;
+    right: 10px;
+  }
+
+  .step-card {
+    margin-left: 0;
+    max-width: 370px;
+    padding: 1rem 1.25rem;
+    border-radius: 16px;
+  }
+  .step-card::before,
+  .step-card::after {
+    right: auto;
+    left: 24px;
+    top: -12px;
+    border-width: 0 12px 12px 12px;
+  }
+  .step-card::before {
+    border-color: #575757 transparent transparent transparent;
+  }
+  .step-card::after {
+    border-color: rgba(21, 20, 25, 0.8) transparent transparent transparent;
+  }
+}
+
+/* job cards css */
+/* Titles */
+.job-title,
+.industries-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+
+/* Slick spacing like your screenshot */
+.job-slider .slick-list,
+.industries-slider .slick-list {
+  margin: 0 -12px;
+}
+.job-slider .slick-slide,
+.industries-slider .slick-slide {
+  margin: 0 12px;
+}
+
+/* Chip cards */
+.chip-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 24px;
+  background: #f7f6f6;
+  border: 1px solid rgba(21, 20, 25, 0.1);
+  border-radius: 16px;
+  min-height: 64px;
+}
+.chip-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(21, 20, 25, 0.1);
+}
+.chip-icon-lg {
+  width: 48px;
+  height: 48px;
+}
+.chip-text {
+  color: #151419;
+}
+
+/* Responsive card density aligns with screenshots */
+@media (max-width: 576px) {
+  .chip-card {
+    border-radius: 16px;
+  }
+}
+
+/* specialization css */
+/* Base Section */
+.specialization-section {
+  background: #fff;
+}
+
+/* Card Style */
+.line-items {
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 20px 24px;
+  transition: all 0.3s ease;
+}
+
+.line-items:hover {
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.secialization-desc {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.specialization-txt {
+  font-size: 18px;
+  font-weight: 600;
+  color: #151419;
+}
+
+/* Slick slider adjustments */
+.specialization-offered-slider .slick-slide {
+  padding: 0 12px;
+}
+
+/* footer advance career section css */
+/* Minimal custom styling */
+.cta-footer {
+  background: #efefd0;
+  overflow: hidden;
+}
+
+.cta-doodle {
+  width: 1400px; /* roughly like the ref */
+  left: -70px; /* pull slightly out of container */
+  pointer-events: none;
+}
+
+.cta-agent-img {
+  max-height: 680px; /* keeps the agent aligned to bottom like screenshot */
+  object-fit: contain;
+}
+
+/* form look to match the UI */
+.cta-footer .form-control {
+  border-radius: 8px;
+  padding: 0.8rem 0.9rem;
+}
+
+.cta-footer .input-group-text {
+  background: #fff;
+  border-radius: 8px 0 0 8px;
+}
+
+/* brand button */
+.btn-om {
+  background: #01458e;
+  color: #fff;
+  border: none;
+}
+.btn-om:hover {
+  filter: brightness(0.95);
+}
+
+/* responsiveness tweaks */
+@media (max-width: 991.98px) {
+  .cta-agent-img {
+    display: none !important;
+  }
+  .cta-doodle {
+    width: 1100px;
+  }
+}
+
+.banner-bg {
+  margin-top: 60px;
+}
+
+.form-section {
+  border: 1px solid #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.formPanel input,
+.formPanel select {
+  padding: 5px 7px;
+  border: 1px solid #aaa;
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+  font-size: 14px;
+}
+.formPanel input {
+  font-size: 14px;
+  transition-duration: 0.3s;
+}
+.formPanel label {
+  font-size: 12px;
+  margin: 0 !important;
+  padding-bottom: 1rem;
+}
+.formPanel input::-webkit-input-placeholder {
+  color: #fff;
+}
+.formPanel input:-moz-placeholder {
+  color: #fff;
+}
+.formPanel input::-moz-placeholder {
+  color: #fff;
+}
+.formPanel input:-ms-input-placeholder {
+  color: #fff;
+}
+input#flexCheckDefault {
+  width: fit-content;
+}
+input#submitButton {
+  background: #f8c300 !important;
+  color: #192335;
+  font-weight: 700;
+}
+.form-section {
+  border: 1px solid #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.modal .modal_banner {
+  background: linear-gradient(150deg, #0522d2 0%, #09143e 60%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.modal-content {
+  border-radius: 1rem !important;
+}
+
+.btn-close2 {
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: 0.25em;
+  color: #fff;
+  background: transparent
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e")
+    center/1em auto no-repeat;
+  border: none;
+  border-radius: 0.25rem;
+  opacity: 1;
+  cursor: pointer;
+}
