@@ -1,0 +1,356 @@
+ 
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body html{
+  font-family: "poppins", sans-serif !important;
+  color: #444444;
+  font-weight:lighter !important;
+}
+
+a {
+  text-decoration: none;
+  color: #dc3545;
+}
+
+a:hover {
+  color: #2b99f8;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  font-family: "Poppins", sans-serif !important;
+}
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.bannerSection {
+    background-image: url(../images/banner-mba-cta.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.logo-img {
+    width: 163px;
+    height: 70px;
+}
+
+.subheading, .button-card {
+    margin-top: 25px;
+}
+
+.subheading {
+    width: fit-content;
+    background-color: #6A6A6A;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 10px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.downloadbrochure-btn {
+    background-color: #ED3237 !important;
+    color: #fff;
+    width: fit-content;
+    border-radius: 50px;
+    padding: 8px;
+}
+.dwn-button {
+    width: fit-content;
+}
+
+.download-brochure-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.whatsAppBtn {
+    background-color: #ffffff;
+    width: fit-content;
+    border: 1px solid #B4B4B4;
+    border-radius: 50px;
+    padding: 8px;
+}
+
+.whatsAppBtn:hover{
+  background-color: #fff;
+}
+
+.whatsapp-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.ranking-card {
+    margin-top: 30px;
+}
+
+.ranking-img {
+    width: 80px;
+    height: 80px;
+}
+
+.ranking-name {
+    /* font-size: 12px; */
+    padding-top: 10px;
+}
+
+.details-card {
+    background: transparent linear-gradient(180deg, #EA2228 0%, #7E1316 100%) 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    border-radius: 16px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.detail-card-1, .detail-card-2, .detail-card-3 {
+    border-bottom: 1px solid #FFFFFF;
+}
+.detail-card-1, .detail-card-2, .detail-card-4, .detail-card-5 {
+    border-right: 1px solid #FFFFFF;
+}
+
+.detail-card-1 div, .detail-card-2 div, .detail-card-3 div, .detail-card-4 div, .detail-card-5 div, .detail-card-6 div {
+    gap: 30px;
+}
+
+.detail-card-img {
+    height: 40px;
+    width: 40px;
+}
+
+.detail-card-1 p, .detail-card-2 p, .detail-card-3 p, .detail-card-4 p, .detail-card-5 p, .detail-card-6 p {
+    font-size: 20px;
+}
+
+/* third section */
+.growthCard-main-heading {
+    color: #020202;
+    font-size: 40px;
+}
+
+.growthCard {
+    background: #FFE9E9;
+    border-radius: 0px;
+    color: #020202;
+    opacity: 1;
+    border: none;
+    height: 100%;
+    flex-direction: row;
+}
+
+.growthCard:hover {
+    background: linear-gradient(to right, #FFB38B, #ED3237);
+    color: #FFFFFF !important;
+}
+
+.growthCard-heading {
+    font-size: 20px;
+    color: #ED3237;
+    font-weight: 600;
+}
+
+.growthCard .card-body ul {
+    line-height: 25px;
+}
+
+.growthCard-li {
+    list-style: none;
+    position: relative;
+    padding-left: 1.5em;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.growthCard-li::before {
+    content: '';
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+    width: 0.6em;
+    height: 0.6em;
+    background-color: #C21D3F;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.knowBtn {
+    background: transparent linear-gradient(90deg, #fb9966 0%, #ED3237 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    width: 50%;
+    border-radius: 50px;
+    padding: 8px;
+}
+
+th {
+    background-color: #FCC823 !important;
+}
+
+td {
+    font-size: 14px !important;
+    background-color: #223543 !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+}
+
+.cardBlock {
+    background: transparent linear-gradient(219deg, #ECECF4 0%, #F5F5F6 100%) 0% 0% no-repeat padding-box;
+    min-height: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.cardBlock:hover {
+    background: transparent linear-gradient(89deg, #fb9966 0%, #ED3237 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    color: #fff;
+}
+
+.line {
+    width: 20%;
+    border: 2px solid #ED3237;
+    opacity: 1;
+    margin-top: 0px;
+}
+
+.cardBlock h5 {
+    font-size: 1.1rem;
+}
+
+.pSize p {
+    font-size: 13px;
+}
+
+.whoCard {
+    box-shadow: 1px 1px 5px #8080808c;
+    margin-bottom: 1rem;
+    min-height: 8.3rem;
+    /* font-size: 35px; */
+}
+
+.whoCard .card-body {
+    display: flex;
+    align-items: center;
+}
+
+.whoCard .card-body p {
+    margin-bottom: 0px;
+}
+
+.Eligiblity-university {
+    list-style-type: none;
+}
+
+.formobile {
+    display: none;
+}
+
+.whatBox p {
+    line-height: 1.5rem;
+    padding-right: 10px;
+}
+
+.checkIcon {
+    padding-left: 16px;
+}
+
+/* #checkIcon li {
+    font-size: 14px;
+} */
+
+#checkIcon li:before {
+    content: "✔"; /* Bold/Heavy check mark */
+    margin: 0 0 0 -30px;
+    color: #f00;
+    font-size: 17px;
+}
+
+::marker {
+    color: #ffffff;
+}
+
+.vdoImg {
+    min-height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colorCng th {
+    color: #fff !important;
+    background-color: #391f24 !important;
+}
+
+.colorCng tr td {
+    color: #fff !important;
+}
+
+.greycolor {
+    filter: invert(10%) sepia(48%) saturate(0%) hue-rotate(223deg) brightness(264%) contrast(51%) !important;
+}
+
+/* modal css */
+
+.form-section {
+  /* border: 1px solid #fff; */
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: #000000;
+}
+
+.formPanel input,
+.formPanel select {
+  padding: 5px 7px;
+  /* border: 1px solid #aaa;
+  background-color: transparent;
+  color: #fff; */
+  width: 100%;
+  font-size: 14px;
+}
+.formPanel input {
+  font-size: 14px;
+  transition-duration: 0.3s;
+}
+.formPanel label {
+  font-size: 12px;
+  margin: 0 !important;
+  padding-bottom: 1rem;
+}
+
+.text-red{
+  color: #b70e2b;
+}
+
+input#flexCheckDefault {
+  width: fit-content;
+}
+input#submitButton {
+  background: #b70e2b !important;
+  color: #fff;
+  font-weight: 700;
+}
+.form-section {
+  border: 1px solid #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: #fff;
+}
+

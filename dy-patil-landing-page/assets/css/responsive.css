@@ -1,0 +1,194 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  section {
+    padding: 30px 0px !important;
+  }
+
+  .kbut {
+    width: 100% !important;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    padding: 40px 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .bannerSection {
+    background-image: url(../images/banner-mobile-mba-cta.png);
+    background-size: cover;
+    overflow: visible !important;
+    height: 400px;
+  }
+  
+  .elBgImg {
+    background-image: url(../images/elBgImg.png) !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .ElBgColor {
+    background-color: #391f24 !important;
+    padding: 30px 10px 30px 10px !important;
+  }
+
+  .bgImgMob {
+    background-image: none !important;
+  }
+
+  .mp-3 {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .apply-online-btn {
+    font-size: 10px;
+  }
+
+  .bannerSection {
+    background-image: url(../images/banner-mobile-mba-cta.png);
+    background-size: cover;
+    overflow: visible !important;
+    height: 400px;
+  }
+
+  .logo-img {
+    width: 125px;
+    height: 54px;
+  }
+
+  .outer {
+    position: relative;
+  }
+
+  .bannerheaing {
+    font-size: 24px;
+  }
+
+  .subheading {
+    font-size: 10px;
+  }
+
+  .button-card,
+  .subheading {
+    margin-top: 15px;
+  }
+
+  .downloadbrochure-btn,
+  .whatsAppBtn {
+    font-size: 12px;
+    padding: 4px;
+    width: fit-content !important;
+  }
+
+  .ranking-card {
+    width: 285px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    bottom: -150px;
+    left: 54%;
+    transform: translateX(-50%);
+  }
+
+  .ranking-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .ranking-name {
+    font-size: 8px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+  }
+
+  .details-card-section {
+    background: transparent linear-gradient(180deg, #ea2228 0%, #7e1316 100%) 0%
+      0% no-repeat padding-box;
+  }
+
+  .details-card-section-container {
+    padding-top: 45px !important;
+  }
+
+  .details-card {
+    background: none;
+    color: #ffffff;
+    border-radius: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .details-card .col-4:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+
+  .details-card .col-4:not(:nth-child(3n)) {
+    margin-right: 2%;
+  }
+
+  .details-card .col-4 {
+    width: 32%;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .detail-card-1,
+  .detail-card-2,
+  .detail-card-3,
+  .detail-card-4,
+  .detail-card-5,
+  .detail-card-6 {
+    border-radius: 10px;
+    background-color: #b093936e;
+  }
+
+  .detail-card-1,
+  .detail-card-2,
+  .detail-card-3 {
+    border-bottom: none;
+  }
+
+  .detail-card-1,
+  .detail-card-2,
+  .detail-card-4,
+  .detail-card-5 {
+    border-right: none;
+  }
+
+  .details-card .col-4 > div {
+    text-align: left;
+    width: 100%;
+    border-radius: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: 100%;
+  }
+
+  .detail-card-1 div,
+  .detail-card-2 div,
+  .detail-card-3 div,
+  .detail-card-4 div,
+  .detail-card-5 div,
+  .detail-card-6 div {
+    gap: 2px;
+  }
+
+  .detail-card-img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .detail-card-1 p,
+  .detail-card-2 p,
+  .detail-card-3 p,
+  .detail-card-4 p,
+  .detail-card-5 p,
+  .detail-card-6 p {
+    font-size: 9px;
+  }
+}
