@@ -1248,9 +1248,18 @@
                                 <div class="form-group mb-3">
                                     <input type="email" class="form-control" id="email" placeholder="Enter your Email" required>
                                 </div>
-                                <div class="form-group mb-3" style="display: flex;">
+                                <!-- <div class="form-group mb-3" style="display: flex;">
                                     <input type="text" maxlength="10" style="width: 100%;" id="phone" class="form-control"
                                         placeholder="Phone Number" autocomplete="off" required>
+                                </div> -->
+
+                                <div class="form-group mb-3" style="display: flex;">
+                                    <input type="text" maxlength="10" style="width: 100%;" id="phone" class="form-control"
+                                        placeholder="Phone Number" name="phone" autocomplete="off" required>
+                                </div>
+                                <div class="form-group mb-3" id="otpdiv" style="display: none;">
+                                    <input type="text" maxlength="6" class="form-control" id="otp" placeholder="Enter OTP" name="otp"
+                                        autocomplete="off" required>
                                 </div>
                                 <div class="form-group mb-3">
                                     <select class="form-control form-select state" id="state" required>
@@ -1310,13 +1319,13 @@
             fin: {
                 title: "Finance (FIN)",
                 fullText: `Equip Yourself for a High-Impact Career in Global Finance
-The Finance Management MBA at D.Y. Patil University delivers a comprehensive foundation in the financial principles, strategies, and analytical tools necessary for today’s finance industry. This program prepares you to address practical challenges across financial organizations, corporate finance, and investment management. With a focus on core areas such as banking, financial analysis, and corporate finance, the Open and Distance MBA in Finance is ideal for those aspiring to management positions in corporate finance, investment, and other banking sectors.`
+           The Finance Management MBA at D.Y. Patil University delivers a comprehensive foundation in the financial principles, strategies, and analytical tools necessary for today’s finance industry. This program prepares you to address practical challenges across financial organizations, corporate finance, and investment management. With a focus on core areas such as banking, financial analysis, and corporate finance, the Open and Distance MBA in Finance is ideal for those aspiring to management positions in corporate finance, investment, and other banking sectors.`
             },
 
             dm: {
                 title: "Digital Marketing (DM)",
                 fullText: `Lead the Future of Marketing in a Digital World
-In today's rapidly digitalizing world, the role of Digital Marketing is essential for business success. The MBA in Digital Marketing at D.Y. Patil University equips you with the tools, strategies, and knowledge needed to thrive in this dynamic industry. Designed for both current and aspiring marketing professionals, this program provides an in-depth understanding of digital platforms, consumer behavior, and cutting-edge marketing techniques, empowering you to excel in an ever-evolving business landscape.`
+                In today's rapidly digitalizing world, the role of Digital Marketing is essential for business success. The MBA in Digital Marketing at D.Y. Patil University equips you with the tools, strategies, and knowledge needed to thrive in this dynamic industry. Designed for both current and aspiring marketing professionals, this program provides an in-depth understanding of digital platforms, consumer behavior, and cutting-edge marketing techniques, empowering you to excel in an ever-evolving business landscape.`
             },
 
             ib: {
@@ -1526,6 +1535,85 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
                 },
                 error: function(error) {
                     console.error("Error fetching cities:", error);
+                }
+            });
+        }
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var phoneInput = document.getElementById("phone");
+            var otp = document.getElementById("otp");
+
+            phoneInput.addEventListener("input", function() {
+                var phoneNumber = phoneInput.value;
+                if (phoneNumber.length === 10) {
+                    generateOTP();
+                }
+            });
+
+            otp.addEventListener("input", function() {
+                var otpNumber = otp.value;
+                if (otpNumber.length === 6) {
+                    otp_verify();
+                }
+            });
+        });
+
+        function generateOTP() {
+            var mobile_no = $("#phone").val();
+            $.ajax({
+                type: "POST",
+                url: 'https://insityapp.com/api/generate-otp',
+                dataType: "json",
+                data: {
+                    mobile_no: mobile_no
+                },
+                success: function(response) {
+                    var result = response.status;
+                    if (result == 1) {
+                        $("#otpdiv").show();
+                        $("#phone").val(mobile_no);
+                        document.getElementById("otpdiv").style.display = "flex";
+
+                        // Update and show the universal modal with the OTP sent message
+                        $('#otpModalLabel').text('OTP Sent');
+                        $('#otpModalBody').text('OTP has been sent to your mobile number.');
+                        $('#otpModal').modal('show');
+                    } else {
+                        document.getElementById("sub_val").disabled = false;
+                    }
+                }
+            });
+        }
+
+        function otp_verify() {
+            var mobile_no = $("#phone").val();
+            var otp = $("#otp").val();
+
+            $.ajax({
+                type: "POST",
+                url: 'https://insityapp.com/api/validate-otp',
+                dataType: "json",
+                data: {
+                    mobile_no: mobile_no,
+                    otp: otp
+                },
+                success: function(response) {
+                    var result = response.status;
+                    if (result == 1) {
+                        // Hide the OTP div
+                        $("#otpdiv").hide();
+
+                        // Update and show the universal modal with the success message
+                        $('#otpModalLabel').text('OTP Verification');
+                        $('#otpModalBody').text('OTP Verification successfully completed.');
+                        $('#otpModal').modal('show');
+                    } else {
+                        // Update and show the universal modal with the invalid OTP message
+                        $('#otpModalLabel').text('Invalid OTP');
+                        $('#otpModalBody').text('The OTP you entered is invalid. Please try again.');
+                        $('#otpModal').modal('show');
+                    }
                 }
             });
         }
