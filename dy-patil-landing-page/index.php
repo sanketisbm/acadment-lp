@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/images/favicon/dy-favicon.png" rel="icon" type="image/png" />
     <title>Master of Business Administration (MBA)</title>
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -1311,8 +1312,9 @@
 
     <footer style="background-color: #ED3237;">
         <div class="container">
-            <div class="copyright py-2 ">
-                <p class=" text-white mb-0"> © Copyright 2025 of D.Y. Patil University | All Rights
+            <div class="copyright py-2 text-center">
+                <p class=" text-white mb-0"> © Copyright <span id="current-year"></span> of D.Y. Patil University | All
+                    Rights
                     Reserved</p>
             </div>
         </div>
@@ -1505,6 +1507,7 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
         });
 
         $(document).ready(function () {
+            document.getElementById("current-year").textContent = new Date().getFullYear();
             localStorage.setItem('verification_flag', '0');
 
             $('.specializations').slick({

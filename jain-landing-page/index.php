@@ -1374,7 +1374,9 @@
 
     <section class="copyright">
         <div class="container">
-            <p class="m-0">Copyright © 2024 & 2025 | All rights reserved.</p>
+            <p class="m-0">
+                Copyright © <span id="current-year"></span> | All rights reserved.
+            </p>
         </div>
     </section>
 
@@ -1434,6 +1436,7 @@
 
     <script>
         $(document).ready(function () {
+            document.getElementById("current-year").textContent = new Date().getFullYear();
 
             $('.hiring-slider').slick({
                 slidesToShow: 6,

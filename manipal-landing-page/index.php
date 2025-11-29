@@ -12,6 +12,7 @@ $testimonials = json_decode($jsonData, true);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/images/favicon/manipal-favicon.webp" rel="icon" type="image/png" />
     <title>Masters in Business Administration</title>
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -233,7 +234,6 @@ $testimonials = json_decode($jsonData, true);
                                 <input type="hidden" id="lead_source" value="DLP-MANIPAL">
                                 <?php
                                 $query_params = [];
-                                parse_str(parse_url($current_url, PHP_URL_QUERY), $query_params);
                                 $utm_source = isset($query_params['gad_source']) ? htmlspecialchars($query_params['gad_source'] || $query_params['utm_source']) : '';
                                 $utm_medium = isset($query_params['gclid']) ? htmlspecialchars($query_params['gclid']) : '';
                                 $utm_campaign = isset($query_params['utm_campaign']) ? htmlspecialchars($query_params['utm_campaign']) : '';
@@ -1242,7 +1242,6 @@ $testimonials = json_decode($jsonData, true);
                                 <input type="hidden" id="lead_source2" value="DLP-MANIPAL">
                                 <?php
                                 $query_params = [];
-                                parse_str(parse_url($current_url, PHP_URL_QUERY), $query_params);
                                 $utm_source = isset($query_params['gad_source']) ? htmlspecialchars($query_params['gad_source'] || $query_params['utm_source']) : '';
                                 $utm_medium = isset($query_params['gclid']) ? htmlspecialchars($query_params['gclid']) : '';
                                 $utm_campaign = isset($query_params['utm_campaign']) ? htmlspecialchars($query_params['utm_campaign']) : '';
@@ -1274,12 +1273,9 @@ $testimonials = json_decode($jsonData, true);
 
             <!-- bottom bar -->
             <div class="container py-3 d-flex justify-content-center gap-3 small text-muted">
-                <div>© 2025 Acadment. ALL RIGHTS RESERVED.</div>
+                <div>© <span id="current-year"></span> Acadment. ALL RIGHTS RESERVED.</div>
             </div>
         </footer>
-
-
-
 
     </main>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1374,6 +1370,7 @@ $testimonials = json_decode($jsonData, true);
 
     <script>
         $(document).ready(function () {
+            document.getElementById("current-year").textContent = new Date().getFullYear();
             $('.logo-content').slick({
                 dots: true,
                 autoplay: true,
