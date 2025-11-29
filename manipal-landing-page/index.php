@@ -27,11 +27,10 @@ $testimonials = json_decode($jsonData, true);
     <link rel="stylesheet" href="assets/css/index.css">
 
     <!-- Meta Pixel Code -->
-
     <script>
-        ! function(f, b, e, v, n, t, s) {
+        ! function (f, b, e, v, n, t, s) {
             if (f.fbq) return;
-            n = f.fbq = function() {
+            n = f.fbq = function () {
                 n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n;
@@ -49,15 +48,24 @@ $testimonials = json_decode($jsonData, true);
         fbq('track', 'PageView');
     </script>
     <noscript>
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=647703537631450&ev=PageView&noscript=1" />
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=647703537631450&ev=PageView&noscript=1" />
     </noscript>
     <!-- End Meta Pixel Code -->
 
-
+    <!-- Manipal – New Microsoft code  -->
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "ud3isc0gzj");
+    </script>
+    <!-- End Manipal – New Microsoft code  -->
 
     <script type="text/javascript">
-        (function(c, l, a, r, i, t, y) {
-            c[a] = c[a] || function() {
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () {
                 (c[a].q = c[a].q || []).push(arguments)
             };
             t = l.createElement(r);
@@ -86,10 +94,7 @@ $testimonials = json_decode($jsonData, true);
         <div
             class="container bg-light rounded-4 shadow-sm d-flex justify-content-between align-items-center py-3 px-4 mt-2">
             <a href="#" class="d-inline-block">
-                <img
-                    src="assets/images/logo (1).webp"
-                    alt="Acadment"
-                    class="img-fluid  manipal-logo" />
+                <img src="assets/images/logo (1).webp" alt="Acadment" class="img-fluid  manipal-logo" />
             </a>
 
             <nav class="d-flex align-items-center gap-4">
@@ -99,12 +104,12 @@ $testimonials = json_decode($jsonData, true);
                         alt="Acadment"
                         class="img-fluid  manipal-logo" />
                 </a> -->
-                <a
-                    href="tel:+919373199999"
+                <a href="tel:+919373199999"
                     class="fw-semibold text-dark border-bottom border-2 border-secondary pb-1 text-decoration-none contact-number">
                     +91-9373 199 999
                 </a>
-                <button class="btn btn-lg btn-warning text-white fw-bold rounded-pill px-4 py-2 download-brochere" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button class="btn btn-lg btn-warning text-white fw-bold rounded-pill px-4 py-2 download-brochere"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Download MBA Brochure
                 </button>
                 <!-- <button class="btn btn-warning text-white fw-bold rounded-pill px-4 py-2 apply-now d-none">
@@ -117,8 +122,11 @@ $testimonials = json_decode($jsonData, true);
     <main class="course-specific-lp muj position-relative bg-white">
         <section id="banner" class="banner-section position-relative overflow-hidden" style="padding-top:6rem">
             <!-- SVG Doodle -->
-            <svg class="doodle desktop animate d-none d-lg-block" xmlns="http://www.w3.org/2000/svg" width="1048" height="910" viewBox="871.757 0 1048.319 910" fill="none">
-                <path d="M1999.5,993.502c-134-527.5-190.45-635.668-271.28-607.478c-80.83,28.192-46.71,208.77-20.37,349.576c20.7,110.598-62.63,176.401-174.891,53.991c-169.14-184.452-242.739-454.515-183.119-528.875c116.119-144.807,222.939,511.255,91.25,559.761c-202.811,74.701-416.46-399.763-548.067-936.37" stroke="rgba(157,218,240,0.3)" stroke-width="80"></path>
+            <svg class="doodle desktop animate d-none d-lg-block" xmlns="http://www.w3.org/2000/svg" width="1048"
+                height="910" viewBox="871.757 0 1048.319 910" fill="none">
+                <path
+                    d="M1999.5,993.502c-134-527.5-190.45-635.668-271.28-607.478c-80.83,28.192-46.71,208.77-20.37,349.576c20.7,110.598-62.63,176.401-174.891,53.991c-169.14-184.452-242.739-454.515-183.119-528.875c116.119-144.807,222.939,511.255,91.25,559.761c-202.811,74.701-416.46-399.763-548.067-936.37"
+                    stroke="rgba(157,218,240,0.3)" stroke-width="80"></path>
             </svg>
 
             <div class="banner-bg container">
@@ -126,7 +134,8 @@ $testimonials = json_decode($jsonData, true);
                     <!-- Left Content -->
                     <div class=" col-lg-8 ">
                         <div class="first-row d-flex flex-column flex-md-row justify-content-between">
-                            <div class="banner-content text-start mb-4 mb-md-0 col-lg-6 col-md-6 d-flex flex-column justify-content-center">
+                            <div
+                                class="banner-content text-start mb-4 mb-md-0 col-lg-6 col-md-6 d-flex flex-column justify-content-center">
                                 <p class="tagline fs-6 text-dark mb-2">Advance Your Managerial Career With An</p>
                                 <h1 class=" fw-semibold text-dark" style="font-size: 2.5rem;">
                                     <span class="position-relative highlight-text ">Online MBA From </span><br>
@@ -145,19 +154,23 @@ $testimonials = json_decode($jsonData, true);
                                     </div>
                                 </div>
 
-                                <button class="btn btn-lg btn-warning text-white fw-bold rounded-pill px-4 py-2 mt-4 dow-broch" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <button
+                                    class="btn btn-lg btn-warning text-white fw-bold rounded-pill px-4 py-2 mt-4 dow-broch"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     Download Brochure
                                 </button>
                             </div>
 
                             <div class="text-center text-md-end  col-lg-6 col-md-6 " style="z-index:10">
-                                <img src="assets/images/woman-graduation-cap-holds-diploma.webp" class="banner-image-2 img-fluid " alt="MBA Banner">
+                                <img src="assets/images/woman-graduation-cap-holds-diploma.webp"
+                                    class="banner-image-2 img-fluid " alt="MBA Banner">
                             </div>
 
                         </div>
                         <!-- Scholarship Band -->
                         <div class="scholarship-band text-white rounded-end-pill px-4 py-3">
-                            <div class="fw-bold">15% discount on program fee. <span class="fw-normal">Limited period offer!</span></div>
+                            <div class="fw-bold">15% discount on program fee. <span class="fw-normal">Limited period
+                                    offer!</span></div>
                         </div>
                     </div>
                     <!-- Right Form -->
@@ -167,27 +180,32 @@ $testimonials = json_decode($jsonData, true);
 
                             <form id="programLeadForm" novalidate="">
                                 <div class="mb-3">
-                                    <input type="text" id="name" class="form-control form-control-lg" placeholder="Enter your full name" required="">
+                                    <input type="text" id="name" class="form-control form-control-lg"
+                                        placeholder="Enter your full name" required="">
                                 </div>
                                 <div class="mb-3">
-                                    <input type="email" id="email" class="form-control form-control-lg" placeholder="Enter your email" required="">
+                                    <input type="email" id="email" class="form-control form-control-lg"
+                                        placeholder="Enter your email" required="">
                                 </div>
                                 <div class="mb-3 input-group">
                                     <span class="input-group-text bg-white border-end-0">
                                         <img src="assets/images/in.png" alt="India Flag" width="20">
                                         <span class="ms-1 text-dark">+91</span>
                                     </span>
-                                    <input type="tel" id="phone" class="form-control form-control-lg border-start-0" placeholder="Enter your mobile number" maxlength="10" required="">
+                                    <input type="tel" id="phone" class="form-control form-control-lg border-start-0"
+                                        placeholder="Enter your mobile number" maxlength="10" required="">
                                 </div>
 
-                                <p id="note" class="d-none" style="color: #ffffffff !important;font-size: 0.735rem;text-align: left;"></p>
+                                <p id="note" class="d-none"
+                                    style="color: #ffffffff !important;font-size: 0.735rem;text-align: left;"></p>
                                 <div class="mb-3" id="otpdiv" style="display: none;">
-                                    <input type="text" maxlength="6" class="form-control form-control-lg" id="otp" placeholder="Enter OTP" name="otp"
-                                        autocomplete="off" required>
+                                    <input type="text" maxlength="6" class="form-control form-control-lg" id="otp"
+                                        placeholder="Enter OTP" name="otp" autocomplete="off" required>
                                 </div>
 
                                 <div class="mb-3">
-                                    <input type="email" id="email" class="form-control form-control-lg" placeholder="Enter your email" required="">
+                                    <input type="email" id="email" class="form-control form-control-lg"
+                                        placeholder="Enter your email" required="">
                                 </div>
 
 
@@ -220,9 +238,12 @@ $testimonials = json_decode($jsonData, true);
                                 $utm_medium = isset($query_params['gclid']) ? htmlspecialchars($query_params['gclid']) : '';
                                 $utm_campaign = isset($query_params['utm_campaign']) ? htmlspecialchars($query_params['utm_campaign']) : '';
                                 ?>
-                                <input type="text" name="utm_source" id="utm_source" value="<?php echo base64_encode($utm_source); ?>" hidden>
-                                <input type="text" name="utm_medium" id="utm_medium" value="<?php echo base64_encode($utm_medium) ?>" hidden>
-                                <input type="text" name="utm_campaign" id="utm_campaign" value="<?php echo $utm_campaign ?>" hidden>
+                                <input type="text" name="utm_source" id="utm_source"
+                                    value="<?php echo base64_encode($utm_source); ?>" hidden>
+                                <input type="text" name="utm_medium" id="utm_medium"
+                                    value="<?php echo base64_encode($utm_medium) ?>" hidden>
+                                <input type="text" name="utm_campaign" id="utm_campaign"
+                                    value="<?php echo $utm_campaign ?>" hidden>
 
                                 <div class="form-check text-start mb-3 small">
                                     <input class="form-check-input" type="checkbox" id="consentCheck" checked="">
@@ -232,7 +253,8 @@ $testimonials = json_decode($jsonData, true);
                                     </label>
                                 </div>
 
-                                <button type="submit" class="btn btn-brown w-100 py-2 fw-bold text-uppercase" disabled="">
+                                <button type="submit" class="btn btn-brown w-100 py-2 fw-bold text-uppercase"
+                                    disabled="">
                                     Apply Now
                                 </button>
                                 <div class="form-footer">
@@ -241,9 +263,13 @@ $testimonials = json_decode($jsonData, true);
                                         <div class="time">0d 11h 17m</div>
                                     </div> <span class="footer-divider" aria-hidden="true"></span>
                                     <div class="seats">
-                                        <div class="progress-circle" data-percent="82" style="display: flex;"> <svg viewBox="0 0 36 36" aria-hidden="true" style=""> <!-- background track -->
-                                                <path class="track" d="M18 2a16 16 0 1 1 0 32a16 16 0 1 1 0-32"></path> <!-- progress arc -->
-                                                <path class="bar" d="M18 2a16 16 0 1 1 0 32a16 16 0 1 1 0-32" stroke-dasharray="82, 100"></path>
+                                        <div class="progress-circle" data-percent="82" style="display: flex;"> <svg
+                                                viewBox="0 0 36 36" aria-hidden="true" style="">
+                                                <!-- background track -->
+                                                <path class="track" d="M18 2a16 16 0 1 1 0 32a16 16 0 1 1 0-32"></path>
+                                                <!-- progress arc -->
+                                                <path class="bar" d="M18 2a16 16 0 1 1 0 32a16 16 0 1 1 0-32"
+                                                    stroke-dasharray="82, 100"></path>
                                             </svg>
                                             <div class="progress-text">
                                                 <div class="pct">82%</div>
@@ -291,11 +317,7 @@ $testimonials = json_decode($jsonData, true);
                     <!-- Coursera -->
                     <div class="col-lg-3 col-md-3 col-6 stat-item">
                         <div class="d-flex align-items-center">
-                            <img
-                                src="assets/images/UNIT-_Coursera.svg"
-                                alt="Coursera"
-                                width="30"
-                                height="30"
+                            <img src="assets/images/UNIT-_Coursera.svg" alt="Coursera" width="30" height="30"
                                 class="me-2 rounded-1" />
                             <span class="fw-semibold stat-label text-dark">
                                 Complimentary Access To Paid Coursera Content
@@ -313,14 +335,16 @@ $testimonials = json_decode($jsonData, true);
                     <h2 class="section-title text-center">Rankings & Accreditations</h2>
                 </div>
                 <div class="row">
-                    <div class="logo-content d-flex flex-wrap justify-content-center align-items-center rank-card-container">
+                    <div
+                        class="logo-content d-flex flex-wrap justify-content-center align-items-center rank-card-container">
 
                         <!-- NAAC -->
                         <div class="col-12 p-4" style="width: 326px;">
 
                             <div class="rank-line-item text-center">
                                 <div class="rank-card-img mb-3">
-                                    <img src="assets/images/rec2/NAAC-A-2.jpg.webp" alt="NAAC A+ Accredited University" width="100">
+                                    <img src="assets/images/rec2/NAAC-A-2.jpg.webp" alt="NAAC A+ Accredited University"
+                                        width="100">
                                 </div>
 
                                 <div class="rank-card-title">
@@ -334,7 +358,8 @@ $testimonials = json_decode($jsonData, true);
                         <div class="col-12 p-4" style="width: 326px;">
                             <div class="rank-line-item text-center">
                                 <div class="rank-card-img mb-3">
-                                    <img src="assets/images/rec2/UGC-2.jpg.webp" alt=" UGC-entitled Online Degrees Equivalent to Campus Degree" width="100">
+                                    <img src="assets/images/rec2/UGC-2.jpg.webp"
+                                        alt=" UGC-entitled Online Degrees Equivalent to Campus Degree" width="100">
                                 </div>
                                 <div class="rank-card-title">
                                     UGC-entitled Online Degrees Equivalent to Campus Degree
@@ -346,7 +371,8 @@ $testimonials = json_decode($jsonData, true);
                         <div class="col-12 p-4" style="width: 326px;">
                             <div class="rank-line-item text-center">
                                 <div class="rank-card-img mb-3">
-                                    <img src="assets/images/rec2/WES-2.jpg.webp" alt="Globally Recognized Online Degrees" width="100">
+                                    <img src="assets/images/rec2/WES-2.jpg.webp"
+                                        alt="Globally Recognized Online Degrees" width="100">
                                 </div>
                                 <div class="rank-card-title">
                                     Globally Recognized Online Degrees
@@ -358,7 +384,8 @@ $testimonials = json_decode($jsonData, true);
                         <div class="col-12 p-4" style="width: 326px;">
                             <div class="rank-line-item text-center">
                                 <div class="rank-card-img mb-3">
-                                    <img src="assets/images/rec2/AICTE-3-1.jpg.webp" alt="AICTE Norms Compliant" width="100">
+                                    <img src="assets/images/rec2/AICTE-3-1.jpg.webp" alt="AICTE Norms Compliant"
+                                        width="100">
                                 </div>
                                 <div class="rank-card-title">
                                     AICTE Norms Compliant
@@ -370,7 +397,8 @@ $testimonials = json_decode($jsonData, true);
                         <div class="col-12 p-4" style="width: 326px;">
                             <div class="rank-line-item text-center">
                                 <div class="rank-card-img mb-3">
-                                    <img src="assets/images/rec2/NBA.jpg.webp" alt=" MBA program accredited by NBA" width="80">
+                                    <img src="assets/images/rec2/NBA.jpg.webp" alt=" MBA program accredited by NBA"
+                                        width="80">
                                 </div>
                                 <div class="rank-card-title">
                                     MBA program accredited by NBA
@@ -387,7 +415,8 @@ $testimonials = json_decode($jsonData, true);
                                     </div>
                                 </div>
                                 <div class="rank-card-img mb-3">
-                                    <img src="assets/images/rec2/Career360-1.jpg.webp" alt="Amongst India's Top 15 Universities (Management) 2023" width="80">
+                                    <img src="assets/images/rec2/Career360-1.jpg.webp"
+                                        alt="Amongst India's Top 15 Universities (Management) 2023" width="80">
                                 </div>
                                 <div class="rank-card-title">
                                     Amongst India's Top 15 Universities (Management) 2023
@@ -404,7 +433,8 @@ $testimonials = json_decode($jsonData, true);
                                     </div>
                                 </div>
                                 <div class="rank-card-img mb-3">
-                                    <img src="assets/images/rec2/QS-2.jpg.webp" alt="Amongst South Asia's Top Universities in 2024" width="100">
+                                    <img src="assets/images/rec2/QS-2.jpg.webp"
+                                        alt="Amongst South Asia's Top Universities in 2024" width="100">
                                 </div>
                                 <div class="rank-card-title">
                                     Amongst South Asia's Top Universities in 2024
@@ -428,7 +458,8 @@ $testimonials = json_decode($jsonData, true);
                         <div class="col-12 p-4" style="width: 326px;">
                             <div class="rank-line-item text-center">
                                 <div class="rank-card-img mb-3">
-                                    <img src="assets/images/rec2/ICAS-1.jpg.webp" alt="International Credential Assessment Service of Canada" width="100">
+                                    <img src="assets/images/rec2/ICAS-1.jpg.webp"
+                                        alt="International Credential Assessment Service of Canada" width="100">
                                 </div>
                                 <div class="rank-card-title">
                                     International Credential Assessment Service of Canada
@@ -440,7 +471,8 @@ $testimonials = json_decode($jsonData, true);
                         <div class="col-12 p-4" style="width: 326px;">
                             <div class="rank-line-item text-center">
                                 <div class="rank-card-img mb-3">
-                                    <img src="assets/images/rec2/IQAS_Online-Manipal-Website.jpg.webp" alt=" International Qualifications Assessment Service" width="100">
+                                    <img src="assets/images/rec2/IQAS_Online-Manipal-Website.jpg.webp"
+                                        alt=" International Qualifications Assessment Service" width="100">
                                 </div>
                                 <div class="rank-card-title">
                                     International Qualifications Assessment Service
@@ -457,7 +489,8 @@ $testimonials = json_decode($jsonData, true);
                                     </div>
                                 </div>
                                 <div class="rank-card-img mb-3">
-                                    <img src="assets/images/rec2/NIRF-1.jpg.webp" alt="Amongst India’s Top #60 Universities in 2025" width="100">
+                                    <img src="assets/images/rec2/NIRF-1.jpg.webp"
+                                        alt="Amongst India’s Top #60 Universities in 2025" width="100">
                                 </div>
                                 <div class="rank-card-title">
                                     Amongst India’s Top #60 Universities in 2025
@@ -468,7 +501,8 @@ $testimonials = json_decode($jsonData, true);
                         <div class="col-12 p-4" style="width: 326px;">
                             <div class="rank-line-item text-center">
                                 <div class="rank-card-img mb-3">
-                                    <img src="assets/images/rec2/zaqa-logo.jpg.webp" alt="Zambia Qualifications Authority" width="100">
+                                    <img src="assets/images/rec2/zaqa-logo.jpg.webp"
+                                        alt="Zambia Qualifications Authority" width="100">
                                 </div>
                                 <div class="rank-card-title">
                                     Zambia Qualifications Authority
@@ -500,7 +534,8 @@ $testimonials = json_decode($jsonData, true);
                         <ul class="feature-list">
                             <li>
                                 <div class="fw-bold">UGC-entitled degrees</div>
-                                <div>Access UGC-entitled degrees from world-class universities that are NAAC accredited.</div>
+                                <div>Access UGC-entitled degrees from world-class universities that are NAAC accredited.
+                                </div>
                             </li>
                             <li>
                                 <div class="fw-bold">Industry webinars &amp; simulations</div>
@@ -512,7 +547,8 @@ $testimonials = json_decode($jsonData, true);
                             </li>
                             <li>
                                 <div class="fw-bold">Prestigious Manipal University alumni status</div>
-                                <div>Benefit from 70+ years of Manipal University legacy and join a 150,000+ member alumni network.</div>
+                                <div>Benefit from 70+ years of Manipal University legacy and join a 150,000+ member
+                                    alumni network.</div>
                             </li>
                         </ul>
                     </div>
@@ -520,10 +556,9 @@ $testimonials = json_decode($jsonData, true);
                     <!-- right -->
                     <div class="col-lg-5">
                         <div class="figure-wrap">
-                            <img src="assets/images/star-pink.svg"
-                                alt="star" class="pink-star">
-                            <img src="assets/images/mentorship-support.webp"
-                                class="img-fluid rounded-3" alt="Mentorship & Support">
+                            <img src="assets/images/star-pink.svg" alt="star" class="pink-star">
+                            <img src="assets/images/mentorship-support.webp" class="img-fluid rounded-3"
+                                alt="Mentorship & Support">
                         </div>
                     </div>
                 </div>
@@ -550,15 +585,18 @@ $testimonials = json_decode($jsonData, true);
                 <div class="d-flex justify-content-between tabs-wrap mb-3">
                     <ul class="nav nav-pills" id="yearTabs" role="tablist">
                         <li class="nav-item me-2" role="presentation">
-                            <button class="nav-link active" id="y1-tab" data-bs-toggle="tab" data-bs-target="#y1" type="button" role="tab">Year 1</button>
+                            <button class="nav-link active" id="y1-tab" data-bs-toggle="tab" data-bs-target="#y1"
+                                type="button" role="tab">Year 1</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="y2-tab" data-bs-toggle="tab" data-bs-target="#y2" type="button" role="tab">Year 2</button>
+                            <button class="nav-link" id="y2-tab" data-bs-toggle="tab" data-bs-target="#y2" type="button"
+                                role="tab">Year 2</button>
                         </li>
                     </ul>
 
                     <a class="dl-btn" href="#">
-                        <img src="assets/images/download-icon.svg" width="16" height="16" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="assets/images/download-icon.svg" width="16" height="16" alt="" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                         Download MBA Brochure Now
                     </a>
                 </div>
@@ -604,7 +642,8 @@ $testimonials = json_decode($jsonData, true);
                         <div class="accordion sem-accordion mt-3" id="y1Acc">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button hdr bg-blue" type="button" data-bs-toggle="collapse" data-bs-target="#y1s1">Semester 1</button>
+                                    <button class="accordion-button hdr bg-blue" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#y1s1">Semester 1</button>
                                 </h2>
                                 <div id="y1s1" class="accordion-collapse collapse show" data-bs-parent="#y1Acc">
                                     <div class="accordion-body">
@@ -623,7 +662,8 @@ $testimonials = json_decode($jsonData, true);
 
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed hdr bg-lime" type="button" data-bs-toggle="collapse" data-bs-target="#y1s2">Semester 2</button>
+                                    <button class="accordion-button collapsed hdr bg-lime" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#y1s2">Semester 2</button>
                                 </h2>
                                 <div id="y1s2" class="accordion-collapse collapse" data-bs-parent="#y1Acc">
                                     <div class="accordion-body">
@@ -672,7 +712,8 @@ $testimonials = json_decode($jsonData, true);
                         <div class="accordion sem-accordion mt-3" id="y2Acc">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button hdr bg-yellow" type="button" data-bs-toggle="collapse" data-bs-target="#y2s3">Semester 3</button>
+                                    <button class="accordion-button hdr bg-yellow" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#y2s3">Semester 3</button>
                                 </h2>
                                 <div id="y2s3" class="accordion-collapse collapse show" data-bs-parent="#y2Acc">
                                     <div class="accordion-body">
@@ -686,7 +727,8 @@ $testimonials = json_decode($jsonData, true);
 
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed hdr bg-pink" type="button" data-bs-toggle="collapse" data-bs-target="#y2s4">Semester 4</button>
+                                    <button class="accordion-button collapsed hdr bg-pink" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#y2s4">Semester 4</button>
                                 </h2>
                                 <div id="y2s4" class="accordion-collapse collapse" data-bs-parent="#y2Acc">
                                     <div class="accordion-body">
@@ -753,29 +795,22 @@ $testimonials = json_decode($jsonData, true);
                     <div class="row g-4">
                         <div class="col-md-6">
                             <div class="bg-light-gray p-4 rounded-4 d-flex align-items-center h-100">
-                                <img
-                                    src="assets/images/scheme.svg"
-                                    alt="emi"
-                                    height="60"
-                                    width="60"
-                                    class="me-3" />
+                                <img src="assets/images/scheme.svg" alt="emi" height="60" width="60" class="me-3" />
                                 <div>
                                     <h5 class="fw-bold mb-1">No-cost EMI</h5>
                                     <p class="mb-0 small text-muted">
-                                        Hassle-free learning with no-cost EMIs, low interest rates, and flexible part-payment options.
+                                        Hassle-free learning with no-cost EMIs, low interest rates, and flexible
+                                        part-payment options.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-6">
-                            <div class="bg-light-gray p-4 rounded-4 d-flex align-items-center justify-content-between h-100">
+                            <div
+                                class="bg-light-gray p-4 rounded-4 d-flex align-items-center justify-content-between h-100">
                                 <div class="d-flex align-items-center">
-                                    <img
-                                        src="assets/images/emi.svg"
-                                        alt="scholarship"
-                                        height="60"
-                                        width="60"
+                                    <img src="assets/images/emi.svg" alt="scholarship" height="60" width="60"
                                         class="me-3" />
                                     <div>
                                         <h5 class="fw-bold mb-1">Manipal University scholarship scheme</h5>
@@ -990,31 +1025,49 @@ $testimonials = json_decode($jsonData, true);
                         </div>
                     </div>
                     <div>
-                        <div class="chip-card"><span class="chip-icon"><img src="assets/images/right-tick.svg" width="20" height="20" alt=""></span><span class="chip-text">Finance Manager</span></div>
+                        <div class="chip-card"><span class="chip-icon"><img src="assets/images/right-tick.svg"
+                                    width="20" height="20" alt=""></span><span class="chip-text">Finance Manager</span>
+                        </div>
                     </div>
                     <div>
-                        <div class="chip-card"><span class="chip-icon"><img src="assets/images/right-tick.svg" width="20" height="20" alt=""></span><span class="chip-text">Operations Lead</span></div>
+                        <div class="chip-card"><span class="chip-icon"><img src="assets/images/right-tick.svg"
+                                    width="20" height="20" alt=""></span><span class="chip-text">Operations Lead</span>
+                        </div>
                     </div>
                     <div>
-                        <div class="chip-card"><span class="chip-icon"><img src="assets/images/right-tick.svg" width="20" height="20" alt=""></span><span class="chip-text">HR Associate</span></div>
+                        <div class="chip-card"><span class="chip-icon"><img src="assets/images/right-tick.svg"
+                                    width="20" height="20" alt=""></span><span class="chip-text">HR Associate</span>
+                        </div>
                     </div>
                     <div>
-                        <div class="chip-card"><span class="chip-icon"><img src="assets/images/right-tick.svg" width="20" height="20" alt=""></span><span class="chip-text">Digital Marketer</span></div>
+                        <div class="chip-card"><span class="chip-icon"><img src="assets/images/right-tick.svg"
+                                    width="20" height="20" alt=""></span><span class="chip-text">Digital Marketer</span>
+                        </div>
                     </div>
                     <div>
-                        <div class="chip-card"><span class="chip-icon"><img src="assets/images/right-tick.svg" width="20" height="20" alt=""></span><span class="chip-text">Territory Manager</span></div>
+                        <div class="chip-card"><span class="chip-icon"><img src="assets/images/right-tick.svg"
+                                    width="20" height="20" alt=""></span><span class="chip-text">Territory
+                                Manager</span></div>
                     </div>
                     <div>
-                        <div class="chip-card"><span class="chip-icon"><img src="assets/images/right-tick.svg" width="20" height="20" alt=""></span><span class="chip-text">Supply Chain Manager</span></div>
+                        <div class="chip-card"><span class="chip-icon"><img src="assets/images/right-tick.svg"
+                                    width="20" height="20" alt=""></span><span class="chip-text">Supply Chain
+                                Manager</span></div>
                     </div>
                     <div>
-                        <div class="chip-card"><span class="chip-icon"><img src="assets/images/right-tick.svg" width="20" height="20" alt=""></span><span class="chip-text">Quality Controller</span></div>
+                        <div class="chip-card"><span class="chip-icon"><img src="assets/images/right-tick.svg"
+                                    width="20" height="20" alt=""></span><span class="chip-text">Quality
+                                Controller</span></div>
                     </div>
                     <div>
-                        <div class="chip-card"><span class="chip-icon"><img src="assets/images/right-tick.svg" width="20" height="20" alt=""></span><span class="chip-text">Project Manager</span></div>
+                        <div class="chip-card"><span class="chip-icon"><img src="assets/images/right-tick.svg"
+                                    width="20" height="20" alt=""></span><span class="chip-text">Project Manager</span>
+                        </div>
                     </div>
                     <div>
-                        <div class="chip-card"><span class="chip-icon"><img src="assets/images/right-tick.svg" width="20" height="20" alt=""></span><span class="chip-text">Entrepreneurship</span></div>
+                        <div class="chip-card"><span class="chip-icon"><img src="assets/images/right-tick.svg"
+                                    width="20" height="20" alt=""></span><span class="chip-text">Entrepreneurship</span>
+                        </div>
                     </div>
                 </div>
 
@@ -1023,34 +1076,46 @@ $testimonials = json_decode($jsonData, true);
                 <div class="industries-slider">
                     <div>
                         <div class="chip-card">
-                            <span class="chip-icon chip-icon-lg"><img src="assets/images/ind.svg" width="28" height="28" alt=""></span>
+                            <span class="chip-icon chip-icon-lg"><img src="assets/images/ind.svg" width="28" height="28"
+                                    alt=""></span>
                             <span class="chip-text">Advertising</span>
                         </div>
                     </div>
 
                     <div>
-                        <div class="chip-card"><span class="chip-icon chip-icon-lg"><img src="assets/images/ind.svg" width="28" height="28" alt=""></span><span class="chip-text">Consulting</span></div>
+                        <div class="chip-card"><span class="chip-icon chip-icon-lg"><img src="assets/images/ind.svg"
+                                    width="28" height="28" alt=""></span><span class="chip-text">Consulting</span></div>
                     </div>
                     <div>
-                        <div class="chip-card"><span class="chip-icon chip-icon-lg"><img src="assets/images/ind.svg" width="28" height="28" alt=""></span><span class="chip-text">Retail</span></div>
+                        <div class="chip-card"><span class="chip-icon chip-icon-lg"><img src="assets/images/ind.svg"
+                                    width="28" height="28" alt=""></span><span class="chip-text">Retail</span></div>
                     </div>
                     <div>
-                        <div class="chip-card"><span class="chip-icon chip-icon-lg"><img src="assets/images/ind.svg" width="28" height="28" alt=""></span><span class="chip-text">FMCG</span></div>
+                        <div class="chip-card"><span class="chip-icon chip-icon-lg"><img src="assets/images/ind.svg"
+                                    width="28" height="28" alt=""></span><span class="chip-text">FMCG</span></div>
                     </div>
                     <div>
-                        <div class="chip-card"><span class="chip-icon chip-icon-lg"><img src="assets/images/ind.svg" width="28" height="28" alt=""></span><span class="chip-text">Media &amp; Publication</span></div>
+                        <div class="chip-card"><span class="chip-icon chip-icon-lg"><img src="assets/images/ind.svg"
+                                    width="28" height="28" alt=""></span><span class="chip-text">Media &amp;
+                                Publication</span></div>
                     </div>
                     <div>
-                        <div class="chip-card"><span class="chip-icon chip-icon-lg"><img src="assets/images/ind.svg" width="28" height="28" alt=""></span><span class="chip-text">Manufacturing</span></div>
+                        <div class="chip-card"><span class="chip-icon chip-icon-lg"><img src="assets/images/ind.svg"
+                                    width="28" height="28" alt=""></span><span class="chip-text">Manufacturing</span>
+                        </div>
                     </div>
                     <div>
-                        <div class="chip-card"><span class="chip-icon chip-icon-lg"><img src="assets/images/ind.svg" width="28" height="28" alt=""></span><span class="chip-text">EdTech</span></div>
+                        <div class="chip-card"><span class="chip-icon chip-icon-lg"><img src="assets/images/ind.svg"
+                                    width="28" height="28" alt=""></span><span class="chip-text">EdTech</span></div>
                     </div>
                     <div>
-                        <div class="chip-card"><span class="chip-icon chip-icon-lg"><img src="assets/images/ind.svg" width="28" height="28" alt=""></span><span class="chip-text">Financial Services</span></div>
+                        <div class="chip-card"><span class="chip-icon chip-icon-lg"><img src="assets/images/ind.svg"
+                                    width="28" height="28" alt=""></span><span class="chip-text">Financial
+                                Services</span></div>
                     </div>
                     <div>
-                        <div class="chip-card"><span class="chip-icon chip-icon-lg"><img src="assets/images/ind.svg" width="28" height="28" alt=""></span><span class="chip-text">Banking</span></div>
+                        <div class="chip-card"><span class="chip-icon chip-icon-lg"><img src="assets/images/ind.svg"
+                                    width="28" height="28" alt=""></span><span class="chip-text">Banking</span></div>
                     </div>
                 </div>
             </div>
@@ -1068,10 +1133,12 @@ $testimonials = json_decode($jsonData, true);
                         <div class="px-3">
                             <div class="card testimonial-card h-100">
                                 <img src="assets/images/testimonials/<?php echo htmlspecialchars($student['image']); ?>"
-                                    class="card-img-top" alt="images/testimonials/<?php echo htmlspecialchars($student['image']); ?>">
+                                    class="card-img-top"
+                                    alt="images/testimonials/<?php echo htmlspecialchars($student['image']); ?>">
                                 <div class="card-body d-flex flex-column">
                                     <p class="card-text flex-grow-1">
-                                        <?php echo htmlspecialchars($student['testimonial']); ?> <a href="#" class="read-more">Read More</a>
+                                        <?php echo htmlspecialchars($student['testimonial']); ?> <a href="#"
+                                            class="read-more">Read More</a>
                                     </p>
                                     <div class="mt-3">
                                         <h6 class="mb-0 fw-bold"><?php echo htmlspecialchars($student['name']); ?></h6>
@@ -1092,7 +1159,8 @@ $testimonials = json_decode($jsonData, true);
             <div class="container py-lg-5 py-4 position-relative">
                 <!-- background doodle -->
                 <svg class="cta-doodle position-absolute top-0 start-0" viewBox="0 0 1920 832" aria-hidden="true">
-                    <path d="M-668 152C-639.667 417.167 -288.1 487.78 839.5 -42.6199C2249 -705.62 86.5 655 798.5 703.5C930.267 712.476 1025.5 691.995 1147.5 648.5M1147.5 648.5C1779 601.683 2062.04 -114.691 1608.5 13C1089.5 159.12 1032.5 760.683 1147.5 648.5ZM1147.5 648.5C1368.5 836.021 1885.8 936.98 2289 -42.6199"
+                    <path
+                        d="M-668 152C-639.667 417.167 -288.1 487.78 839.5 -42.6199C2249 -705.62 86.5 655 798.5 703.5C930.267 712.476 1025.5 691.995 1147.5 648.5M1147.5 648.5C1779 601.683 2062.04 -114.691 1608.5 13C1089.5 159.12 1032.5 760.683 1147.5 648.5ZM1147.5 648.5C1368.5 836.021 1885.8 936.98 2289 -42.6199"
                         stroke="#E8E8B7" stroke-width="120" fill="none" />
                 </svg>
 
@@ -1100,7 +1168,8 @@ $testimonials = json_decode($jsonData, true);
                     <!-- Left: form -->
                     <div class="col-lg-7 z-1">
                         <h2 class="section-title  mb-2">Advance Your Career</h2>
-                        <p class="text-muted mb-4">Fill in your information, and our team will connect with you shortly.</p>
+                        <p class="text-muted mb-4">Fill in your information, and our team will connect with you shortly.
+                        </p>
 
                         <form class="needs-validation" id="secondaryLeadForm" novalidate>
                             <div class="row g-3">
@@ -1108,13 +1177,15 @@ $testimonials = json_decode($jsonData, true);
                                 <!-- Full Name -->
                                 <div class="col-md-6">
                                     <label class="form-label">Full name <span class="text-danger">*</span></label>
-                                    <input type="text" id="name2" class="form-control" placeholder="Enter your full name" required>
+                                    <input type="text" id="name2" class="form-control"
+                                        placeholder="Enter your full name" required>
                                 </div>
 
                                 <!-- Email -->
                                 <div class="col-md-6">
                                     <label class="form-label">Email address <span class="text-danger">*</span></label>
-                                    <input type="email" id="email2" class="form-control" placeholder="Enter your email" required>
+                                    <input type="email" id="email2" class="form-control" placeholder="Enter your email"
+                                        required>
                                 </div>
 
                                 <!-- Mobile -->
@@ -1124,15 +1195,17 @@ $testimonials = json_decode($jsonData, true);
                                         <span class="input-group-text px-2">
                                             <span class="me-1">🇮🇳</span> +91
                                         </span>
-                                        <input type="tel" id="phone2" class="form-control" placeholder="Enter your mobile number" maxlength="10" required>
+                                        <input type="tel" id="phone2" class="form-control"
+                                            placeholder="Enter your mobile number" maxlength="10" required>
                                     </div>
                                 </div>
 
                                 <div class="col-md-6" id="otpdiv2" style="display: none;">
-                                    <input type="text" maxlength="6" class="form-control form-control" id="otp2" placeholder="Enter OTP" name="otp2"
-                                        autocomplete="off" required>
+                                    <input type="text" maxlength="6" class="form-control form-control" id="otp2"
+                                        placeholder="Enter OTP" name="otp2" autocomplete="off" required>
                                 </div>
-                                <p id="note2" class="d-none" style="color: #111 !important;font-size: 0.735rem;text-align: left;"></p>
+                                <p id="note2" class="d-none"
+                                    style="color: #111 !important;font-size: 0.735rem;text-align: left;"></p>
                                 <!-- State -->
                                 <div class="col-md-6">
                                     <label class="form-label">State <span class="text-danger">*</span></label>
@@ -1154,7 +1227,8 @@ $testimonials = json_decode($jsonData, true);
                                     <div class="form-check d-flex gap-2">
                                         <input class="form-check-input mt-0" type="checkbox" id="consent2" checked>
                                         <label class="form-check-label small text-muted" for="consent2">
-                                            I authorize Acadment and its associates to contact me via Email, SMS, WhatsApp, and voice call.
+                                            I authorize Acadment and its associates to contact me via Email, SMS,
+                                            WhatsApp, and voice call.
                                         </label>
                                     </div>
                                 </div>
@@ -1173,13 +1247,17 @@ $testimonials = json_decode($jsonData, true);
                                 $utm_medium = isset($query_params['gclid']) ? htmlspecialchars($query_params['gclid']) : '';
                                 $utm_campaign = isset($query_params['utm_campaign']) ? htmlspecialchars($query_params['utm_campaign']) : '';
                                 ?>
-                                <input type="text" name="utm_source2" id="utm_source2" value="<?php echo base64_encode($utm_source); ?>" hidden>
-                                <input type="text" name="utm_medium2" id="utm_medium2" value="<?php echo base64_encode($utm_medium) ?>" hidden>
-                                <input type="text" name="utm_campaign2" id="utm_campaign2" value="<?php echo $utm_campaign ?>" hidden>
+                                <input type="text" name="utm_source2" id="utm_source2"
+                                    value="<?php echo base64_encode($utm_source); ?>" hidden>
+                                <input type="text" name="utm_medium2" id="utm_medium2"
+                                    value="<?php echo base64_encode($utm_medium) ?>" hidden>
+                                <input type="text" name="utm_campaign2" id="utm_campaign2"
+                                    value="<?php echo $utm_campaign ?>" hidden>
 
                                 <!-- Submit -->
                                 <div class="col-12">
-                                    <button class="btn btn-brown btn-lg px-5 rounded-pill w-100" id="submit2" type="submit" disabled>Apply Now</button>
+                                    <button class="btn btn-brown btn-lg px-5 rounded-pill w-100" id="submit2"
+                                        type="submit" disabled>Apply Now</button>
                                 </div>
                             </div>
                         </form>
@@ -1188,9 +1266,7 @@ $testimonials = json_decode($jsonData, true);
 
                     <!-- Right: image -->
                     <div class="col-lg-5 position-relative">
-                        <img
-                            src="assets/images/footer-lady-1.webp"
-                            class="cta-agent-img img-fluid ms-lg-auto"
+                        <img src="assets/images/footer-lady-1.webp" class="cta-agent-img img-fluid ms-lg-auto"
                             alt="Support agent">
                     </div>
                 </div>
@@ -1220,19 +1296,22 @@ $testimonials = json_decode($jsonData, true);
                             <p>Please fill in your details below. </p>
                             <form id="modalLeadForm" novalidate class="formPanel">
                                 <div class="form-group mb-3">
-                                    <input type="text" class="form-control" id="name3" placeholder="Enter your Name" required>
+                                    <input type="text" class="form-control" id="name3" placeholder="Enter your Name"
+                                        required>
                                 </div>
                                 <div class="form-group mb-3">
-                                    <input type="email" class="form-control" id="email3" placeholder="Enter your Email" required>
+                                    <input type="email" class="form-control" id="email3" placeholder="Enter your Email"
+                                        required>
                                 </div>
                                 <div class="form-group mb-3" style="display: flex;">
-                                    <input type="text" maxlength="10" style="width: 100%;" id="phone3" class="form-control"
-                                        placeholder="Phone Number" autocomplete="off" required>
+                                    <input type="text" maxlength="10" style="width: 100%;" id="phone3"
+                                        class="form-control" placeholder="Phone Number" autocomplete="off" required>
                                 </div>
-                                <p id="note3" class="d-none" style="color: #fffdfdff !important;font-size: 0.735rem;text-align: left;"></p>
+                                <p id="note3" class="d-none"
+                                    style="color: #fffdfdff !important;font-size: 0.735rem;text-align: left;"></p>
                                 <div class="form-group mb-3" id="otpdiv3" style="display: none;">
-                                    <input type="text" maxlength="6" class="form-control form-control" id="otp3" placeholder="Enter OTP" name="otp3"
-                                        autocomplete="off" required>
+                                    <input type="text" maxlength="6" class="form-control form-control" id="otp3"
+                                        placeholder="Enter OTP" name="otp3" autocomplete="off" required>
                                 </div>
                                 <div class="form-group mb-3">
                                     <select class="form-control form-select state3" id="state3" required>
@@ -1259,17 +1338,22 @@ $testimonials = json_decode($jsonData, true);
                                 $utm_medium = isset($query_params['gclid']) ? htmlspecialchars($query_params['gclid']) : '';
                                 $utm_campaign = isset($query_params['utm_campaign']) ? htmlspecialchars($query_params['utm_campaign']) : '';
                                 ?>
-                                <input type="text" name="utm_source3" id="utm_source3" value="<?php echo base64_encode($utm_source); ?>" hidden>
-                                <input type="text" name="utm_medium3" id="utm_medium3" value="<?php echo base64_encode($utm_medium) ?>" hidden>
-                                <input type="text" name="utm_campaign3" id="utm_campaign3" value="<?php echo $utm_campaign ?>" hidden>
+                                <input type="text" name="utm_source3" id="utm_source3"
+                                    value="<?php echo base64_encode($utm_source); ?>" hidden>
+                                <input type="text" name="utm_medium3" id="utm_medium3"
+                                    value="<?php echo base64_encode($utm_medium) ?>" hidden>
+                                <input type="text" name="utm_campaign3" id="utm_campaign3"
+                                    value="<?php echo $utm_campaign ?>" hidden>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label text-white" for="flexCheckDefault">
-                                        By clicking on submit I allow Acadment to call me & send program information on Email/Phone.
+                                        By clicking on submit I allow Acadment to call me & send program information on
+                                        Email/Phone.
                                     </label>
                                 </div>
                                 <div class="form-group mb-3 d-flex justify-content-center">
-                                    <input type="submit" id="submitButton" name="submit" value="Apply Now" class="btn banner-button btn-primary" />
+                                    <input type="submit" id="submitButton" name="submit" value="Apply Now"
+                                        class="btn banner-button btn-primary" />
                                 </div>
                             </form>
 
@@ -1289,7 +1373,7 @@ $testimonials = json_decode($jsonData, true);
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.logo-content').slick({
                 dots: true,
                 autoplay: true,
@@ -1299,34 +1383,34 @@ $testimonials = json_decode($jsonData, true);
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 responsive: [{
-                        breakpoint: 1300,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-                            infinite: true,
-                        }
-                    },
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
+                    breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
                     }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
                 ]
             });
 
@@ -1342,23 +1426,23 @@ $testimonials = json_decode($jsonData, true);
                 adaptiveHeight: false,
                 cssEase: 'ease',
                 responsive: [{
-                        breakpoint: 1200,
-                        settings: {
-                            slidesToShow: 3
-                        }
-                    },
-                    {
-                        breakpoint: 900,
-                        settings: {
-                            slidesToShow: 2
-                        }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            slidesToShow: 1
-                        }
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3
                     }
+                },
+                {
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
                 ]
             });
 
@@ -1373,23 +1457,23 @@ $testimonials = json_decode($jsonData, true);
                 slidesToScroll: 1,
                 cssEase: 'ease',
                 responsive: [{
-                        breakpoint: 1200,
-                        settings: {
-                            slidesToShow: 3
-                        }
-                    },
-                    {
-                        breakpoint: 900,
-                        settings: {
-                            slidesToShow: 2
-                        }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            slidesToShow: 1
-                        }
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3
                     }
+                },
+                {
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
                 ]
             });
 
@@ -1404,23 +1488,23 @@ $testimonials = json_decode($jsonData, true);
                 slidesToScroll: 1,
                 cssEase: 'ease',
                 responsive: [{
-                        breakpoint: 1200,
-                        settings: {
-                            slidesToShow: 3
-                        }
-                    },
-                    {
-                        breakpoint: 900,
-                        settings: {
-                            slidesToShow: 2
-                        }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            slidesToShow: 1
-                        }
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3
                     }
+                },
+                {
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
                 ]
             });
 
@@ -1437,23 +1521,23 @@ $testimonials = json_decode($jsonData, true);
                 prevArrow: '<button type="button" class="slick-prev" aria-label="Previous"><i class="fa fa-chevron-left"></i></button>',
                 nextArrow: '<button type="button" class="slick-next" aria-label="Next"><i class="fa fa-chevron-right"></i></button>',
                 responsive: [{
-                        breakpoint: 992,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 4
-                        }
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
                     }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 4
+                    }
+                }
                 ]
             });
 
-            $('.rank-line-item').each(function() {
+            $('.rank-line-item').each(function () {
                 const txt = $.trim($(this).find('.rank-top').text());
                 if (txt.length) $(this).find('.rank-badge').css('display', 'block');
             });
@@ -1462,28 +1546,28 @@ $testimonials = json_decode($jsonData, true);
             fetch_states();
 
             // When a state is selected, fetch its cities
-            $("#state").on("change", function() {
+            $("#state").on("change", function () {
                 fetch_city();
             });
 
             fetch_states2();
 
             // When a state is selected, fetch its cities
-            $("#state2").on("change", function() {
+            $("#state2").on("change", function () {
                 fetch_city2();
             });
 
             fetch_states3();
 
             // When a state is selected, fetch its cities
-            $("#state3").on("change", function() {
+            $("#state3").on("change", function () {
                 fetch_city3();
             });
             // Validate input fields
             $("#programLeadForm input, #programLeadForm select, #consentCheck").on("input change", validateForm);
 
             // Handle form submit
-            $("#programLeadForm").on("submit", function(e) {
+            $("#programLeadForm").on("submit", function (e) {
                 e.preventDefault();
 
                 // 🔍 Check verification flag
@@ -1522,7 +1606,7 @@ $testimonials = json_decode($jsonData, true);
                     data: JSON.stringify(data), // Send JSON
                     contentType: "application/json", // Tell server it’s JSON
                     dataType: "json", // Expect JSON response
-                    success: function(response) {
+                    success: function (response) {
                         console.log(response);
                         if (response.status === "success") {
                             // alert("✅ Form submitted successfully!");
@@ -1535,7 +1619,7 @@ $testimonials = json_decode($jsonData, true);
                             alert("⚠️ Unexpected response from server.");
                         }
                     },
-                    error: function(xhr, status, error) {
+                    error: function (xhr, status, error) {
                         console.error("AJAX Error:", error, xhr.responseText);
                         alert("❌ Error submitting form. Please try again later.");
                     }
@@ -1543,7 +1627,7 @@ $testimonials = json_decode($jsonData, true);
             });
 
             // Enable submit button only if form is valid
-            $("#secondaryLeadForm input, #secondaryLeadForm select").on("input change", function() {
+            $("#secondaryLeadForm input, #secondaryLeadForm select").on("input change", function () {
                 const allFilled = $("#name2").val().trim() &&
                     $("#email2").val().trim() &&
                     $("#phone2").val().trim().length === 10 &&
@@ -1553,7 +1637,7 @@ $testimonials = json_decode($jsonData, true);
             });
 
             // Form submit
-            $("#secondaryLeadForm").on("submit", function(e) {
+            $("#secondaryLeadForm").on("submit", function (e) {
                 e.preventDefault();
 
                 // 🔍 Check verification flag
@@ -1595,7 +1679,7 @@ $testimonials = json_decode($jsonData, true);
                     type: "POST",
                     data: JSON.stringify(data),
                     contentType: "application/json",
-                    success: function(response) {
+                    success: function (response) {
                         console.log(response);
                         if (response.status === "success") {
                             // alert("✅ Form submitted successfully!");
@@ -1608,7 +1692,7 @@ $testimonials = json_decode($jsonData, true);
                             alert("⚠️ Unexpected response from server.");
                         }
                     },
-                    error: function(xhr, status, error) {
+                    error: function (xhr, status, error) {
                         console.error(error);
                         alert("❌ Error submitting form. Please try again later.");
                     }
@@ -1616,9 +1700,9 @@ $testimonials = json_decode($jsonData, true);
             });
 
             // Form submit
-            $("#modalLeadForm").on("submit", function(e) {
+            $("#modalLeadForm").on("submit", function (e) {
                 e.preventDefault();
-                
+
 
                 // 🔍 Check verification flag
                 const verificationFlag = localStorage.getItem("verification_flag");
@@ -1660,7 +1744,7 @@ $testimonials = json_decode($jsonData, true);
                     type: "POST",
                     data: JSON.stringify(data),
                     contentType: "application/json",
-                    success: function(response) {
+                    success: function (response) {
                         console.log(response);
                         if (response.status === "success") {
                             window.location.href = "thank-you.php";
@@ -1670,7 +1754,7 @@ $testimonials = json_decode($jsonData, true);
                             alert("⚠️ Unexpected response from server.");
                         }
                     },
-                    error: function(xhr, status, error) {
+                    error: function (xhr, status, error) {
                         console.error(error);
                         alert("❌ Error submitting form. Please try again later.");
                     }
@@ -1684,7 +1768,7 @@ $testimonials = json_decode($jsonData, true);
                 type: "POST",
                 url: "https://insityapp.com/dbFiles/fetch_states.php",
                 dataType: "json",
-                success: function(response) {
+                success: function (response) {
                     var names = response.states;
                     var state = $("#state");
                     state.empty().append('<option value="">Select State</option>');
@@ -1696,7 +1780,7 @@ $testimonials = json_decode($jsonData, true);
                         }));
                     }
                 },
-                error: function(error) {
+                error: function (error) {
                     console.error("Error fetching states:", error);
                 }
             });
@@ -1711,7 +1795,7 @@ $testimonials = json_decode($jsonData, true);
                     state: state
                 },
                 dataType: "json",
-                success: function(response) {
+                success: function (response) {
                     var names = response.cities;
                     var city = $(".city");
                     city.empty().append('<option value="">Select City</option>');
@@ -1723,7 +1807,7 @@ $testimonials = json_decode($jsonData, true);
                         }));
                     }
                 },
-                error: function(error) {
+                error: function (error) {
                     console.error("Error fetching cities:", error);
                 }
             });
@@ -1734,7 +1818,7 @@ $testimonials = json_decode($jsonData, true);
                 type: "POST",
                 url: "https://insityapp.com/dbFiles/fetch_states.php",
                 dataType: "json",
-                success: function(response) {
+                success: function (response) {
                     var names = response.states;
                     var state = $("#state2");
                     state.empty().append('<option value="">Select State</option>');
@@ -1746,7 +1830,7 @@ $testimonials = json_decode($jsonData, true);
                         }));
                     }
                 },
-                error: function(error) {
+                error: function (error) {
                     console.error("Error fetching states:", error);
                 }
             });
@@ -1761,7 +1845,7 @@ $testimonials = json_decode($jsonData, true);
                     state: state
                 },
                 dataType: "json",
-                success: function(response) {
+                success: function (response) {
                     var names = response.cities;
                     var city = $(".city2");
                     city.empty().append('<option value="">Select City</option>');
@@ -1773,7 +1857,7 @@ $testimonials = json_decode($jsonData, true);
                         }));
                     }
                 },
-                error: function(error) {
+                error: function (error) {
                     console.error("Error fetching cities:", error);
                 }
             });
@@ -1785,7 +1869,7 @@ $testimonials = json_decode($jsonData, true);
                 type: "POST",
                 url: "https://insityapp.com/dbFiles/fetch_states.php",
                 dataType: "json",
-                success: function(response) {
+                success: function (response) {
                     var names = response.states;
                     var state = $("#state3");
                     state.empty().append('<option value="">Select State</option>');
@@ -1797,7 +1881,7 @@ $testimonials = json_decode($jsonData, true);
                         }));
                     }
                 },
-                error: function(error) {
+                error: function (error) {
                     console.error("Error fetching states:", error);
                 }
             });
@@ -1812,7 +1896,7 @@ $testimonials = json_decode($jsonData, true);
                     state: state
                 },
                 dataType: "json",
-                success: function(response) {
+                success: function (response) {
                     var names = response.cities;
                     var city = $(".city3");
                     city.empty().append('<option value="">Select City</option>');
@@ -1824,7 +1908,7 @@ $testimonials = json_decode($jsonData, true);
                         }));
                     }
                 },
-                error: function(error) {
+                error: function (error) {
                     console.error("Error fetching cities:", error);
                 }
             });
@@ -1863,7 +1947,7 @@ $testimonials = json_decode($jsonData, true);
             }
         });
 
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             var phoneInput = document.getElementById("phone");
             var otp = document.getElementById("otp");
 
@@ -1873,28 +1957,28 @@ $testimonials = json_decode($jsonData, true);
             var phoneInput3 = document.getElementById("phone3");
             var otp3 = document.getElementById("otp3");
 
-            phoneInput.addEventListener("input", function() {
+            phoneInput.addEventListener("input", function () {
                 var phoneNumber = phoneInput.value;
                 if (phoneNumber.length === 10) {
                     generateOTP();
                 }
             });
 
-            otp.addEventListener("input", function() {
+            otp.addEventListener("input", function () {
                 var otpNumber = otp.value;
                 if (otpNumber.length === 6) {
                     otp_verify();
                 }
             });
 
-            phoneInput2.addEventListener("input", function() {
+            phoneInput2.addEventListener("input", function () {
                 var phoneNumber2 = phoneInput2.value;
                 if (phoneNumber2.length === 10) {
                     generateOTP2();
                 }
             });
 
-            otp2.addEventListener("input", function() {
+            otp2.addEventListener("input", function () {
                 var otpNumber2 = otp2.value;
                 if (otpNumber2.length === 6) {
                     otp_verify2();
@@ -1902,14 +1986,14 @@ $testimonials = json_decode($jsonData, true);
             });
 
 
-            phoneInput3.addEventListener("input", function() {
+            phoneInput3.addEventListener("input", function () {
                 var phoneNumber3 = phoneInput3.value;
                 if (phoneNumber3.length === 10) {
                     generateOTP3();
                 }
             });
 
-            otp3.addEventListener("input", function() {
+            otp3.addEventListener("input", function () {
                 var otpNumber3 = otp3.value;
                 if (otpNumber3.length === 6) {
                     otp_verify3();
@@ -1935,7 +2019,7 @@ $testimonials = json_decode($jsonData, true);
                     mobile_no: mobile_no,
                     otp: verification_code
                 },
-                success: function(response) {
+                success: function (response) {
                     var result = response.status;
                     if (result == 1) {
                         $("#otpdiv").show();
@@ -1965,7 +2049,7 @@ $testimonials = json_decode($jsonData, true);
                     mobile_no: mobile_no,
                     otp: verification_code
                 },
-                success: function(response) {
+                success: function (response) {
                     var result = response.status;
                     if (result == 1) {
                         $("#otpdiv2").show();
@@ -1995,7 +2079,7 @@ $testimonials = json_decode($jsonData, true);
                     mobile_no: mobile_no,
                     otp: verification_code
                 },
-                success: function(response) {
+                success: function (response) {
                     var result = response.status;
                     if (result == 1) {
                         $("#otpdiv3").show();

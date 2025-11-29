@@ -50,7 +50,7 @@
         <div class="form-check ms-3">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
             <label class="form-check-label text-dark form3-label text-start" for="flexCheckDefault">
-                By clicking on submit I allow ISBM University to call me & send program information on Email/Phone.
+                By clicking on submit I allow Acadment to call me & send program information on Email/Phone.
             </label>
         </div>
         <div class="form-group d-flex justify-content-center mt-2">

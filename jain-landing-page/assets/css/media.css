@@ -1,62 +1,3 @@
-/* Up to 480px */
-@media (max-width: 480px) {
-}
-/* Extra small (XS) */
-@media (max-width: 575.98px) {
-  .alumni-card {
-    padding: 18px 16px 20px;
-  }
-  .ranking-card {
-    min-height: 200px;
-    padding: 20px 16px;
-  }
-  .placement-bg {
-    border-radius: unset;
-  }
-  .py-5{
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
-  }
-  .nav-pill-btn{
-    padding: 0.3rem 1rem;
-  }
-}
-/* 481px to 767px */
-@media (max-width: 767px) {
-  .stats-cards {
-    grid-template-columns: 1fr; /* stack on mobile */
-  }
-  .get-started-slug-section {
-    padding: 40px 25px;
-  }
-
-  .get-started-slug-title {
-    font-size: 1.8rem;
-  }
-
-  .slug-cta-wrapper {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
-  .open-form-pointer {
-    margin-left: 0;
-    font-size: 0.95rem;
-  }
-
-  .get-started-slug-section::before,
-  .get-started-slug-section::after {
-    width: 280px;
-    height: 280px;
-  }
-  .elective-slider .slick-slide {
-    padding-right: 10px;
-  }
-  .copyright {
-    padding-bottom: 45px;
-  }
-}
 @media (max-width: 991px) {
   .hero-left-inner {
     max-width: 100%;
@@ -113,9 +54,6 @@
   .placement-bg {
     padding-bottom: 60px;
   }
-  .get-started-slug-section {
-    margin-bottom: 2rem;
-  }
   .full-hero-img .hero-img {
     border-radius: unset !important;
     width: 100%;
@@ -165,9 +103,80 @@
   .stats-content .subtitle-underline {
     align-items: center !important;
   }
-  .download-brochure-btn{
+  .download-brochure-btn {
     display: none;
   }
+  .get-started-slug-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .get-started-slug-absolute-image {
+    right: -65px;
+  }
+}
+/* 481px to 767px */
+@media (max-width: 767px) {
+  .stats-cards {
+    grid-template-columns: 1fr; /* stack on mobile */
+  }
+  .get-started-slug-section {
+    padding: 40px 25px;
+  }
+
+  .get-started-slug-title {
+    font-size: 1.8rem;
+  }
+
+  .slug-cta-wrapper {
+    flex-direction: column;
+  }
+  .get-started-slug-section::before,
+  .get-started-slug-section::after {
+    width: 280px;
+    height: 280px;
+  }
+  .elective-slider .slick-slide {
+    padding-right: 10px;
+  }
+  .copyright {
+    padding-bottom: 45px;
+  }
+  .get-started-slug-absolute-image {
+    display: none;
+  }
+  .get-started-btn {
+    width: 200px;
+    font-size: 0.9rem;
+    padding: 8px 26px;
+  }
+}
+/* Extra small (XS) */
+@media (max-width: 575.98px) {
+  .alumni-card {
+    padding: 18px 16px 20px;
+  }
+  .ranking-card {
+    min-height: 200px;
+    padding: 20px 16px;
+  }
+  .placement-bg {
+    border-radius: unset;
+  }
+  .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  .nav-pill-btn {
+    padding: 0.3rem 1rem;
+  }
+  .get-started-slug-title {
+    font-size: 1.8rem;
+  }
+}
+/* Up to 480px */
+@media (max-width: 480px) {
 }
 /* 768px to 1023px */
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -239,7 +248,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  button.btn.btn-primary.enquire_now2 {
+  .btn.btn-primary.enquire_now2 {
     display: none;
   }
 }

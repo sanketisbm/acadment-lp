@@ -18,13 +18,42 @@
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="assets/css/index.css?param">
     <link rel="stylesheet" href="assets/css/responsive.css?param">
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '647703537631450');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=647703537631450&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 
+    <!-- DY Patil LP – Microsoft Code -->
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "ud3jww0uzb");
+    </script>
+    <!-- End DY Patil LP – Microsoft Code -->
 </head>
 
 <body>
 
     <section id="topbar" class="w-100 p-0" style="height: 40px;">
-        <div class="container-fluid d-flex align-items-center justify-content-center justify-content-md-between" style="background: #ED3237; color: #fff; position: fixed; top: 0; left: 0; z-index: 9999; height: 40px;">
+        <div class="container-fluid d-flex align-items-center justify-content-center justify-content-md-between"
+            style="background: #ED3237; color: #fff; position: fixed; top: 0; left: 0; z-index: 9999; height: 40px;">
 
             <div class="container d-flex align-items-center justify-content-between" style="height: 100%;">
 
@@ -41,13 +70,15 @@
 
 
                 <div class="col-lg-2 d-flex align-items-center justify-content-end d-none d-lg-flex">
-                    <a class="text-white" href="tel:+91-8956983919" style="font-size: 14px; font-weight: 600; text-decoration: none;">
+                    <a class="text-white" href="tel:+91-8956983919"
+                        style="font-size: 14px; font-weight: 600; text-decoration: none;">
                         <i class="fa fa-phone"></i> +91-8956983919
                     </a>
                 </div>
 
                 <div class="col-lg-2 col-4 d-flex align-items-center justify-content-end d-flex">
-                    <a class="apply-online-btn bg-light rounded-pill text-dark px-2 py-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <a class="apply-online-btn bg-light rounded-pill text-dark px-2 py-1" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
                         Apply Online
                     </a>
                 </div>
@@ -71,9 +102,14 @@
                     </div>
                     <div class="row button-card">
                         <div class="col-md-10 d-flex flex-column flex-lg-row align-items-left gap-lg-5 gap-2">
-                            <a class="btn btn-md px-3 dwn-button downloadbrochure-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Download Brochure <img src="assets/images/download-arrow.png" alt="download brochure" class="img-fluid download-brochure-icon"></a>
+                            <a class="btn btn-md px-3 dwn-button downloadbrochure-btn" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Download Brochure <img
+                                    src="assets/images/download-arrow.png" alt="download brochure"
+                                    class="img-fluid download-brochure-icon"></a>
 
-                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" target="_blank" class="btn btn-md whatsAppBtn px-3 ">Get Details on <img src="assets/images/call.png" alt="whatsapp icon" class="img-fluid whatsapp-icon ms-1"></a>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" target="_blank"
+                                class="btn btn-md whatsAppBtn px-3 ">Get Details on <img src="assets/images/call.png"
+                                    alt="whatsapp icon" class="img-fluid whatsapp-icon ms-1"></a>
                         </div>
                     </div>
                     <div class="row ranking-card">
@@ -107,39 +143,45 @@
             <div class="row details-card">
                 <div class="col-4 detail-card-1">
                     <div class="d-flex align-items-center p-lg-4">
-                        <img src="assets/images/detail-card-1.png" alt="education icon" class="d-none d-lg-block detail-card-img img-fluid">
+                        <img src="assets/images/detail-card-1.png" alt="education icon"
+                            class="d-none d-lg-block detail-card-img img-fluid">
                         <p class="mb-0"><b>2-Year</b> <br>Online Program</p>
 
                     </div>
                 </div>
                 <div class="col-4 d-flex align-items-center detail-card-2">
                     <div class="d-flex align-items-center p-lg-4">
-                        <img src="assets/images/detail-card-2.png" alt="education icon" class="d-none d-lg-block detail-card-img img-fluid">
+                        <img src="assets/images/detail-card-2.png" alt="education icon"
+                            class="d-none d-lg-block detail-card-img img-fluid">
                         <p class="mb-0 d-none d-lg-block"><b>Masterclasses by</b> <br> Industry Leaders</p>
                         <p class="mb-0 d-lg-none"><b>Masterclasses by</b> Industry Leaders</p>
                     </div>
                 </div>
                 <div class="col-4 d-flex align-items-center detail-card-3">
                     <div class="d-flex align-items-center p-lg-4">
-                        <img src="assets/images/detail-card-3.png" alt="education icon" class="d-none d-lg-block detail-card-img img-fluid">
+                        <img src="assets/images/detail-card-3.png" alt="education icon"
+                            class="d-none d-lg-block detail-card-img img-fluid">
                         <p class="mb-0">Trusted by<br><b>10,000+ Learners</b></p>
                     </div>
                 </div>
                 <div class="col-4 d-flex align-items-center detail-card-4">
                     <div class="d-flex align-items-center p-lg-4">
-                        <img src="assets/images/detail-card-4.png" alt="education icon" class="d-none d-lg-block detail-card-img img-fluid">
+                        <img src="assets/images/detail-card-4.png" alt="education icon"
+                            class="d-none d-lg-block detail-card-img img-fluid">
                         <p class="mb-0">At par with<br><b>on-campus degree</b></p>
                     </div>
                 </div>
                 <div class="col-4 d-flex align-items-center detail-card-5">
                     <div class="d-flex align-items-center p-lg-4">
-                        <img src="assets/images/detail-card-5.png" alt="education icon" class="d-none d-lg-block detail-card-img img-fluid">
+                        <img src="assets/images/detail-card-5.png" alt="education icon"
+                            class="d-none d-lg-block detail-card-img img-fluid">
                         <p class="mb-0"><b>Zero-Cost EMI</b><br>option</p>
                     </div>
                 </div>
                 <div class="col-4 d-flex align-items-center detail-card-6">
                     <div class="d-flex align-items-center p-lg-4">
-                        <img src="assets/images/detail-card-6.png" alt="education icon" class="d-none d-lg-block detail-card-img img-fluid">
+                        <img src="assets/images/detail-card-6.png" alt="education icon"
+                            class="d-none d-lg-block detail-card-img img-fluid">
                         <p class="mb-0 d-none d-lg-block"><b>¼ the</b><br>on-campus fees</p>
                         <p class="mb-0 d-lg-none"><b>¼ the</b> on-campus fees</p>
                     </div>
@@ -149,7 +191,8 @@
         </div>
     </section>
 
-    <section class="d-flex justify-cntent-center align-items-center bgImgMob" style="background-image: url('assets/images/banner2.png');background-size: 100%;    background-repeat: no-repeat;">
+    <section class="d-flex justify-cntent-center align-items-center bgImgMob"
+        style="background-image: url('assets/images/banner2.png');background-size: 100%;    background-repeat: no-repeat;">
         <div class="container">
             <div class="row mp-3">
                 <h2 class="mb-5 " style="font-weight: 700;">About Online MBA Degree Program</h2>
@@ -157,9 +200,15 @@
 
                     <ul class="checkIcon" id="checkIcon">
 
-                        <li class="text-dark mb-4"> &nbsp;&nbsp;DYPU Online Business Programmes are designed to provide students with a broad-based and strong business foundation in preparation for a successful career in the global business world.</li>
-                        <li class="text-dark mb-4"> &nbsp;&nbsp;This 2-year MBA program, offered in the online mode, has the latest curriculum, which is at par with the MBA program offered by leading Universities.</li>
-                        <li class="text-dark mb-4"> &nbsp;&nbsp;The program provides learning through several tools like virtual classroom sessions, Personal contact programs, Video lectures, eLearning, online video library, etc.</li>
+                        <li class="text-dark mb-4"> &nbsp;&nbsp;DYPU Online Business Programmes are designed to provide
+                            students with a broad-based and strong business foundation in preparation for a successful
+                            career in the global business world.</li>
+                        <li class="text-dark mb-4"> &nbsp;&nbsp;This 2-year MBA program, offered in the online mode, has
+                            the latest curriculum, which is at par with the MBA program offered by leading Universities.
+                        </li>
+                        <li class="text-dark mb-4"> &nbsp;&nbsp;The program provides learning through several tools like
+                            virtual classroom sessions, Personal contact programs, Video lectures, eLearning, online
+                            video library, etc.</li>
                     </ul>
                 </div>
                 <div class="col-xl-6 col-md-6 p-5">
@@ -172,19 +221,26 @@
 
     <section>
         <div class="container">
-            <h2 class="text-center mb-5 growthCard-main-heading">Equip Yourself For <span class="fw-bold" style="color:#ED3237;">What’s Next</span></h2>
+            <h2 class="text-center mb-5 growthCard-main-heading">Equip Yourself For <span class="fw-bold"
+                    style="color:#ED3237;">What’s Next</span></h2>
             <div class="row justify-content-center">
                 <div class="col-lg-6 mt-4">
                     <div class="card growthCard border-0">
                         <div class="row g-0 ">
                             <div class="col-md-4">
-                                <img src="assets/images/master-tools-&amp;-people-skills.png" class="img-fluid rounded-start h-100 d-none d-lg-block" alt="Master Tools &amp; People Skills">
-                                <img src="assets/images/master-tools-&amp;-people-skills-mobile.png" class="img-fluid rounded-start h-100 d-lg-none" alt="Master Tools &amp; People Skills">
+                                <img src="assets/images/master-tools-&amp;-people-skills.png"
+                                    class="img-fluid rounded-start h-100 d-none d-lg-block"
+                                    alt="Master Tools &amp; People Skills">
+                                <img src="assets/images/master-tools-&amp;-people-skills-mobile.png"
+                                    class="img-fluid rounded-start h-100 d-lg-none"
+                                    alt="Master Tools &amp; People Skills">
                             </div>
                             <div class="col-md-8 ps-2">
                                 <div class="card-body">
-                                    <h5 class="card-title growthCard-heading fw-bold">Master Tools &amp; People Skills</h5>
-                                    <p class="card-text">Build a well-rounded skill set with both soft skills and technical expertise</p>
+                                    <h5 class="card-title growthCard-heading fw-bold">Master Tools &amp; People Skills
+                                    </h5>
+                                    <p class="card-text">Build a well-rounded skill set with both soft skills and
+                                        technical expertise</p>
                                     <hr>
                                     <ul class="ps-0 mb-0">
                                         <li class="growthCard-li">Learn MS Excel | Tableau | Power BI </li>
@@ -201,8 +257,10 @@
                     <div class="card growthCard border-0">
                         <div class="row g-0 ">
                             <div class="col-md-4">
-                                <img src="assets/images/get-ahead-with-gen-ai.png" class="img-fluid rounded-start h-100 d-none d-lg-block" alt="get ahead with gen ai">
-                                <img src="assets/images/get-ahead-with-gen-ai-mobile.png" class="img-fluid rounded-start h-100 d-lg-none" alt="get ahead with gen ai">
+                                <img src="assets/images/get-ahead-with-gen-ai.png"
+                                    class="img-fluid rounded-start h-100 d-none d-lg-block" alt="get ahead with gen ai">
+                                <img src="assets/images/get-ahead-with-gen-ai-mobile.png"
+                                    class="img-fluid rounded-start h-100 d-lg-none" alt="get ahead with gen ai">
                             </div>
                             <div class="col-md-8 ps-2">
                                 <div class="card-body">
@@ -224,13 +282,17 @@
                     <div class="card growthCard border-0">
                         <div class="row g-0 ">
                             <div class="col-md-4">
-                                <img src="assets/images/get-trained-for-tomorrow.png" class="img-fluid rounded-start h-100 d-none d-lg-block" alt="Get Trained for Tomorrow">
-                                <img src="assets/images/get-trained-for-tomorrow-mobile.png" class="img-fluid rounded-start h-100 d-lg-none" alt="Get Trained for Tomorrow">
+                                <img src="assets/images/get-trained-for-tomorrow.png"
+                                    class="img-fluid rounded-start h-100 d-none d-lg-block"
+                                    alt="Get Trained for Tomorrow">
+                                <img src="assets/images/get-trained-for-tomorrow-mobile.png"
+                                    class="img-fluid rounded-start h-100 d-lg-none" alt="Get Trained for Tomorrow">
                             </div>
                             <div class="col-md-8 ps-2">
                                 <div class="card-body">
                                     <h5 class="card-title growthCard-heading fw-bold">Get Trained for Tomorrow</h5>
-                                    <p class="card-text">Stay on top with future-facing content and real world exposure</p>
+                                    <p class="card-text">Stay on top with future-facing content and real world exposure
+                                    </p>
                                     <hr>
                                     <ul class="ps-0 mb-0">
                                         <li class=" growthCard-li">Work on real world brand challenges </li>
@@ -247,8 +309,11 @@
                     <div class="card growthCard border-0">
                         <div class="row g-0 ">
                             <div class="col-md-4">
-                                <img src="assets/images/your-career-springboard.png" class="img-fluid rounded-start h-100 d-none d-lg-block" alt="Your Career Springboard">
-                                <img src="assets/images/your-career-springboard-mobile.png" class="img-fluid rounded-start h-100 d-lg-none" alt="Your Career Springboard">
+                                <img src="assets/images/your-career-springboard.png"
+                                    class="img-fluid rounded-start h-100 d-none d-lg-block"
+                                    alt="Your Career Springboard">
+                                <img src="assets/images/your-career-springboard-mobile.png"
+                                    class="img-fluid rounded-start h-100 d-lg-none" alt="Your Career Springboard">
                             </div>
                             <div class="col-md-8 ps-2">
                                 <div class="card-body">
@@ -295,7 +360,9 @@
             <div class="row">
                 <div class="col-12 d-lg-flex justify-content-between">
                     <h2 class="fw-bold mb-3" style="color: #000;">Program Highlights</h2>
-                    <a class="btn  knowBtn ms-lg-4 d-none d-lg-block" style="font-size: 17px;      width: fit-content;  height: fit-content;" data-bs-toggle="modal" data-bs-target="#exampleModal">Download Brochure</a>
+                    <a class="btn  knowBtn ms-lg-4 d-none d-lg-block"
+                        style="font-size: 17px;      width: fit-content;  height: fit-content;" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Download Brochure</a>
                 </div>
 
                 <table class="table table-bordered">
@@ -314,7 +381,9 @@
                 </table>
 
                 <div class="col-12 d-flex justify-content-center">
-                    <a class="btn  knowBtn ms-lg-4 d-lg-none" style="font-size: 17px; width: fit-content;  height: fit-content;" data-bs-toggle="modal" data-bs-target="#exampleModal">Download Brochure</a>
+                    <a class="btn  knowBtn ms-lg-4 d-lg-none"
+                        style="font-size: 17px; width: fit-content;  height: fit-content;" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Download Brochure</a>
                 </div>
             </div>
         </div>
@@ -508,7 +577,8 @@
                                 <p class="card-text text-truncate-2" style="color:#646464;">
                                     Sales are the lifeblood of any business...
                                 </p>
-                                <a href="#" class="btn btn-md knowBtn" data-key="sm" data-bs-toggle="modal" data-bs-target="#specializationModal">Know More</a>
+                                <a href="#" class="btn btn-md knowBtn" data-key="sm" data-bs-toggle="modal"
+                                    data-bs-target="#specializationModal">Know More</a>
                             </div>
                         </div>
                     </div>
@@ -524,7 +594,8 @@
                                 <p class="card-text text-truncate-2" style="color:#646464;">
                                     The online MBA in HRM from D.Y. Patil University...
                                 </p>
-                                <a href="#" class="btn btn-md knowBtn" data-key="hrm" data-bs-toggle="modal" data-bs-target="#specializationModal">Know More</a>
+                                <a href="#" class="btn btn-md knowBtn" data-key="hrm" data-bs-toggle="modal"
+                                    data-bs-target="#specializationModal">Know More</a>
                             </div>
                         </div>
                     </div>
@@ -540,7 +611,8 @@
                                 <p class="card-text text-truncate-2" style="color:#646464;">
                                     As the health and social care industry evolves...
                                 </p>
-                                <a href="#" class="btn btn-md knowBtn" data-key="hhm" data-bs-toggle="modal" data-bs-target="#specializationModal">Know More</a>
+                                <a href="#" class="btn btn-md knowBtn" data-key="hhm" data-bs-toggle="modal"
+                                    data-bs-target="#specializationModal">Know More</a>
                             </div>
                         </div>
                     </div>
@@ -556,7 +628,8 @@
                                 <p class="card-text text-truncate-2" style="color:#646464;">
                                     The Finance Management MBA at D.Y. Patil University...
                                 </p>
-                                <a href="#" class="btn btn-md knowBtn" data-key="fin" data-bs-toggle="modal" data-bs-target="#specializationModal">Know More</a>
+                                <a href="#" class="btn btn-md knowBtn" data-key="fin" data-bs-toggle="modal"
+                                    data-bs-target="#specializationModal">Know More</a>
                             </div>
                         </div>
                     </div>
@@ -572,7 +645,8 @@
                                 <p class="card-text text-truncate-2" style="color:#646464;">
                                     The MBA in Retail Management at D.Y. Patil University...
                                 </p>
-                                <a href="#" class="btn btn-md knowBtn" data-key="rm" data-bs-toggle="modal" data-bs-target="#specializationModal">Know More</a>
+                                <a href="#" class="btn btn-md knowBtn" data-key="rm" data-bs-toggle="modal"
+                                    data-bs-target="#specializationModal">Know More</a>
                             </div>
                         </div>
                     </div>
@@ -588,7 +662,8 @@
                                 <p class="card-text text-truncate-2" style="color:#646464;">
                                     In today's digital world, Business Analytics is indispensable...
                                 </p>
-                                <a href="#" class="btn btn-md knowBtn" data-key="dsba" data-bs-toggle="modal" data-bs-target="#specializationModal">Know More</a>
+                                <a href="#" class="btn btn-md knowBtn" data-key="dsba" data-bs-toggle="modal"
+                                    data-bs-target="#specializationModal">Know More</a>
                             </div>
                         </div>
                     </div>
@@ -604,7 +679,8 @@
                                 <p class="card-text text-truncate-2" style="color:#646464;">
                                     In today's rapidly digitalizing world, the role of Digital Marketing...
                                 </p>
-                                <a href="#" class="btn btn-md knowBtn" data-key="dm" data-bs-toggle="modal" data-bs-target="#specializationModal">Know More</a>
+                                <a href="#" class="btn btn-md knowBtn" data-key="dm" data-bs-toggle="modal"
+                                    data-bs-target="#specializationModal">Know More</a>
                             </div>
                         </div>
                     </div>
@@ -620,7 +696,8 @@
                                 <p class="card-text text-truncate-2" style="color:#646464;">
                                     The MBA in Logistics & Supply Chain Management prepares you...
                                 </p>
-                                <a href="#" class="btn btn-md knowBtn" data-key="lsm" data-bs-toggle="modal" data-bs-target="#specializationModal">Know More</a>
+                                <a href="#" class="btn btn-md knowBtn" data-key="lsm" data-bs-toggle="modal"
+                                    data-bs-target="#specializationModal">Know More</a>
                             </div>
                         </div>
                     </div>
@@ -636,7 +713,8 @@
                                 <p class="card-text text-truncate-2" style="color:#646464;">
                                     In a rapidly evolving global marketplace...
                                 </p>
-                                <a href="#" class="btn btn-md knowBtn" data-key="ib" data-bs-toggle="modal" data-bs-target="#specializationModal">Know More</a>
+                                <a href="#" class="btn btn-md knowBtn" data-key="ib" data-bs-toggle="modal"
+                                    data-bs-target="#specializationModal">Know More</a>
                             </div>
                         </div>
                     </div>
@@ -652,7 +730,8 @@
                                 <p class="card-text text-truncate-2" style="color:#646464;">
                                     The Online MBA in Entrepreneurship Management immerses you...
                                 </p>
-                                <a href="#" class="btn btn-md knowBtn" data-key="em" data-bs-toggle="modal" data-bs-target="#specializationModal">Know More</a>
+                                <a href="#" class="btn btn-md knowBtn" data-key="em" data-bs-toggle="modal"
+                                    data-bs-target="#specializationModal">Know More</a>
                             </div>
                         </div>
                     </div>
@@ -668,7 +747,8 @@
                                 <p class="card-text text-truncate-2" style="color:#646464;">
                                     The events industry is a vibrant, fast-paced field...
                                 </p>
-                                <a href="#" class="btn btn-md knowBtn" data-key="evm" data-bs-toggle="modal" data-bs-target="#specializationModal">Know More</a>
+                                <a href="#" class="btn btn-md knowBtn" data-key="evm" data-bs-toggle="modal"
+                                    data-bs-target="#specializationModal">Know More</a>
                             </div>
                         </div>
                     </div>
@@ -678,7 +758,8 @@
         </div>
     </section>
 
-    <section class="elBgImg" style="background-image: url('assets/images/banner5.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <section class="elBgImg"
+        style="background-image: url('assets/images/banner5.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
         <div class="container">
             <div class="row text-white">
                 <div class="col-lg-6 col-md-6">
@@ -686,20 +767,32 @@
                         <h2 class="mb-5" style="font-weight: 700;">MBA Eligibility</h2>
                         <h5 class="mb-4">For Indian students</h5>
                         <div class="liSet">
-                            <p>The University welcomes applications from all the aspirants who have completed following criteria : </p>
+                            <p>The University welcomes applications from all the aspirants who have completed following
+                                criteria : </p>
                             <ol style="font-size: 14px;">
-                                <li>40 %+ in 10th from Recognized Board / SSC is Mandatory&nbsp; (As per the existing policy of University)</li>
-                                <li>Either 40 %+ in 12th / HSC / Recognized Board OR Overall 50 %+ in 3 Years of Polytechnic Diploma from recognized Board</li>
-                                <li>Overall 40 %+ in Bachelor's Degree from Recognized University (For 10 + 2 + Regular Graduation)</li>
-                                <li>If Student applying for MBA ; wherein student has taken Lateral Entry route for completing Graduation like (10+3+Graduation) ; in such cases Overall 50 %+ in Graduation and Overall 50% in Polytechnic Diploma, both are required</li>
+                                <li>40 %+ in 10th from Recognized Board / SSC is Mandatory&nbsp; (As per the existing
+                                    policy of University)</li>
+                                <li>Either 40 %+ in 12th / HSC / Recognized Board OR Overall 50 %+ in 3 Years of
+                                    Polytechnic Diploma from recognized Board</li>
+                                <li>Overall 40 %+ in Bachelor's Degree from Recognized University (For 10 + 2 + Regular
+                                    Graduation)</li>
+                                <li>If Student applying for MBA ; wherein student has taken Lateral Entry route for
+                                    completing Graduation like (10+3+Graduation) ; in such cases Overall 50 %+ in
+                                    Graduation and Overall 50% in Polytechnic Diploma, both are required</li>
                             </ol>
                         </div>
                         <div class="mt-0 mb-5">
-                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-lg mt-1 fs-6 px-5  " style="background-color: #FFFFFF; border-radius: 0px; border-bottom: 2px solid #db0026;color: black;">Know More </a>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                class="btn btn-lg mt-1 fs-6 px-5  "
+                                style="background-color: #FFFFFF; border-radius: 0px; border-bottom: 2px solid #db0026;color: black;">Know
+                                More </a>
                         </div>
                         <h5 class="mb-4">For International Students:</h5>
                         <div class="mt-2">
-                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-lg mt-1 fs-6 px-5  " style="background-color: #FFFFFF; border-radius: 0px; border-bottom: 2px solid #db0026;color: black;">Know More </a>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                class="btn btn-lg mt-1 fs-6 px-5  "
+                                style="background-color: #FFFFFF; border-radius: 0px; border-bottom: 2px solid #db0026;color: black;">Know
+                                More </a>
                         </div>
                     </div>
                 </div>
@@ -814,14 +907,21 @@
                             </table>
                             <p>*Only For Indian Students</p>
                             <ul>
-                                <li>The Facility for EMI based Finance Option is offered by Non Banking Finance Company (NBFC)</li>
-                                <li>&nbsp;By Applying to above Finance led EMI based Fees Plan, the students undertakes that he / she is applying for a Loan from the Non-Banking Finance Company</li>
-                                <li>The Loan is subject to Finance based Eligibility Criteria of the NBFC Partner of the University</li>
-                                <li>&nbsp;University has no role to play in the finance option as this is only a facility for students extended by the University</li>
-                                <li>&nbsp;By selecting Loan Facility Student Undertakes to abide by all the norms of NBFC towards the Loan Facility extended</li>
+                                <li>The Facility for EMI based Finance Option is offered by Non Banking Finance Company
+                                    (NBFC)</li>
+                                <li>&nbsp;By Applying to above Finance led EMI based Fees Plan, the students undertakes
+                                    that he / she is applying for a Loan from the Non-Banking Finance Company</li>
+                                <li>The Loan is subject to Finance based Eligibility Criteria of the NBFC Partner of the
+                                    University</li>
+                                <li>&nbsp;University has no role to play in the finance option as this is only a
+                                    facility for students extended by the University</li>
+                                <li>&nbsp;By selecting Loan Facility Student Undertakes to abide by all the norms of
+                                    NBFC towards the Loan Facility extended</li>
                                 <li>&nbsp;Admission is subject to eligibility norms of the university</li>
                             </ul>
-                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn ms-4 px-4" style="background:#fff; border-bottom:2px solid #ED3237; outline:1px solid #fff; border-radius:1px;color: black;">Other Fees</a>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn ms-4 px-4"
+                                style="background:#fff; border-bottom:2px solid #ED3237; outline:1px solid #fff; border-radius:1px;color: black;">Other
+                                Fees</a>
                         </div>
                     </div>
 
@@ -838,7 +938,9 @@
                     <h2 class="fw-bold mb-3">Who should <br> enroll?</h2>
                 </div>
                 <div class="col-lg-9 col-md-6 col-6 ">
-                    <a class="btn btn-md knowBtn header-mobile  mb-2 text-end  knowBtn1" style="padding: 10px 18px !important;font-size: 15px;text-align: center !important;    width: auto;" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Online</a>
+                    <a class="btn btn-md knowBtn header-mobile  mb-2 text-end  knowBtn1"
+                        style="padding: 10px 18px !important;font-size: 15px;text-align: center !important;    width: auto;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Online</a>
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
@@ -933,7 +1035,8 @@
                     <div class="col-lg-3 col-md-3 col-6 mb-5">
                         <div class="card border-0 mobpb20">
                             <div class="card-image mb-3">
-                                <img src="https://cdn-websites.talentedge.com/DYPATIL/www/wwwroot/dypatiledu.com/assets/img/details-dy/dypu1.svg" alt="" class="img-fluid w-25 greycolor">
+                                <img src="https://cdn-websites.talentedge.com/DYPATIL/www/wwwroot/dypatiledu.com/assets/img/details-dy/dypu1.svg"
+                                    alt="" class="img-fluid w-25 greycolor">
                             </div>
                             <div class="">
                                 <p>11 specialization to choose from</p>
@@ -945,7 +1048,8 @@
                     <div class="col-lg-3 col-md-3  col-6">
                         <div class="card border-0 mobpb20">
                             <div class="card-image mb-3">
-                                <img src="https://cdn-websites.talentedge.com/DYPATIL/www/wwwroot/dypatiledu.com/assets/img/details-dy/dypu2.svg" alt="" class="img-fluid w-25 greycolor">
+                                <img src="https://cdn-websites.talentedge.com/DYPATIL/www/wwwroot/dypatiledu.com/assets/img/details-dy/dypu2.svg"
+                                    alt="" class="img-fluid w-25 greycolor">
                             </div>
                             <div class="">
                                 <p>Webinars and recorded lectures</p>
@@ -957,7 +1061,8 @@
                     <div class="col-lg-3 col-md-3  col-6">
                         <div class="card border-0 mobpb20">
                             <div class="card-image mb-3">
-                                <img src="https://cdn-websites.talentedge.com/DYPATIL/www/wwwroot/dypatiledu.com/assets/img/details-dy/dypu3.svg" alt="" class="img-fluid w-25 greycolor">
+                                <img src="https://cdn-websites.talentedge.com/DYPATIL/www/wwwroot/dypatiledu.com/assets/img/details-dy/dypu3.svg"
+                                    alt="" class="img-fluid w-25 greycolor">
                             </div>
                             <div class="">
                                 <p>International Content</p>
@@ -969,7 +1074,8 @@
                     <div class="col-lg-3 col-md-3  col-6">
                         <div class="card border-0 mobpb20">
                             <div class="card-image mb-3">
-                                <img src="https://cdn-websites.talentedge.com/DYPATIL/www/wwwroot/dypatiledu.com/assets/img/details-dy/dypu4.svg" alt="" class="img-fluid w-25 greycolor">
+                                <img src="https://cdn-websites.talentedge.com/DYPATIL/www/wwwroot/dypatiledu.com/assets/img/details-dy/dypu4.svg"
+                                    alt="" class="img-fluid w-25 greycolor">
                             </div>
                             <div class="">
                                 <p>Assignment based studies</p>
@@ -981,7 +1087,8 @@
                     <div class="col-lg-3 col-md-3  col-6">
                         <div class="card border-0 mobpb20">
                             <div class="card-image mb-3">
-                                <img src="https://cdn-websites.talentedge.com/DYPATIL/www/wwwroot/dypatiledu.com/assets/img/details-dy/dypu6.svg" alt="" class="img-fluid w-25 greycolor">
+                                <img src="https://cdn-websites.talentedge.com/DYPATIL/www/wwwroot/dypatiledu.com/assets/img/details-dy/dypu6.svg"
+                                    alt="" class="img-fluid w-25 greycolor">
                             </div>
                             <div class="">
                                 <p>24 x 7 Helpline</p>
@@ -994,7 +1101,8 @@
                     <div class="col-lg-3 col-md-3  col-6">
                         <div class="card border-0 mobpb20">
                             <div class="card-image mb-3">
-                                <img src="https://cdn-websites.talentedge.com/DYPATIL/www/wwwroot/dypatiledu.com/assets/img/details-dy/dypu7.svg" alt="" class="img-fluid w-25 greycolor">
+                                <img src="https://cdn-websites.talentedge.com/DYPATIL/www/wwwroot/dypatiledu.com/assets/img/details-dy/dypu7.svg"
+                                    alt="" class="img-fluid w-25 greycolor">
                             </div>
                             <div class="">
                                 <p>E-Library Access</p>
@@ -1007,7 +1115,8 @@
                     <div class="col-lg-3 col-md-3  col-6">
                         <div class="card border-0 mobpb20">
                             <div class="card-image mb-3">
-                                <img src="https://cdn-websites.talentedge.com/DYPATIL/www/wwwroot/dypatiledu.com/assets/img/details-dy/dypu8.svg" alt="" class="img-fluid w-25 greycolor">
+                                <img src="https://cdn-websites.talentedge.com/DYPATIL/www/wwwroot/dypatiledu.com/assets/img/details-dy/dypu8.svg"
+                                    alt="" class="img-fluid w-25 greycolor">
                             </div>
                             <div class="">
                                 <p>Placement Assistance &amp; Recruitment</p>
@@ -1029,7 +1138,8 @@
                     <h2 class="fw-bold mb-3">Job Roles after Online MBA </h2>
                 </div>
                 <div class="col-lg-9 col-md-6 col-6 ">
-                    <a class="btn btn-md knowBtn w-25 kbut" style="font-size: 17px;" data-bs-toggle="modal" data-bs-target="#exampleModal">Start Your Application</a>
+                    <a class="btn btn-md knowBtn w-25 kbut" style="font-size: 17px;" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Start Your Application</a>
                 </div>
             </div>
             <div class="row">
@@ -1243,10 +1353,12 @@
                             <p class="text-dark">Please fill in your details below. </p>
                             <form id="modalLeadForm" novalidate class="formPanel">
                                 <div class="form-group mb-3">
-                                    <input type="text" class="form-control" id="name" placeholder="Enter your Name" required>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your Name"
+                                        required>
                                 </div>
                                 <div class="form-group mb-3">
-                                    <input type="email" class="form-control" id="email" placeholder="Enter your Email" required>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your Email"
+                                        required>
                                 </div>
                                 <!-- <div class="form-group mb-3" style="display: flex;">
                                     <input type="text" maxlength="10" style="width: 100%;" id="phone" class="form-control"
@@ -1254,13 +1366,15 @@
                                 </div> -->
 
                                 <div class="form-group mb-3" style="display: flex;">
-                                    <input type="text" maxlength="10" style="width: 100%;" id="phone" class="form-control"
-                                        placeholder="Phone Number" name="phone" autocomplete="off" required>
+                                    <input type="text" maxlength="10" style="width: 100%;" id="phone"
+                                        class="form-control" placeholder="Phone Number" name="phone" autocomplete="off"
+                                        required>
                                 </div>
-                                <p id="note" class="d-none" style="color: #111 !important;font-size: 0.735rem;text-align: left;"></p>
+                                <p id="note" class="d-none"
+                                    style="color: #111 !important;font-size: 0.735rem;text-align: left;"></p>
                                 <div class="form-group mb-3" id="otpdiv" style="display: none;">
-                                    <input type="text" maxlength="6" class="form-control" id="otp" placeholder="Enter OTP" name="otp"
-                                        autocomplete="off" required>
+                                    <input type="text" maxlength="6" class="form-control" id="otp"
+                                        placeholder="Enter OTP" name="otp" autocomplete="off" required>
                                 </div>
                                 <div class="form-group mb-3">
                                     <select class="form-control form-select state" id="state" required>
@@ -1287,17 +1401,22 @@
                                 $utm_medium = isset($query_params['gclid']) ? htmlspecialchars($query_params['gclid']) : '';
                                 $utm_campaign = isset($query_params['utm_campaign']) ? htmlspecialchars($query_params['utm_campaign']) : '';
                                 ?>
-                                <input type="text" name="utm_source" id="utm_source" value="<?php echo base64_encode($utm_source); ?>" hidden>
-                                <input type="text" name="utm_medium" id="utm_medium" value="<?php echo base64_encode($utm_medium) ?>" hidden>
-                                <input type="text" name="utm_campaign" id="utm_campaign" value="<?php echo $utm_campaign ?>" hidden>
+                                <input type="text" name="utm_source" id="utm_source"
+                                    value="<?php echo base64_encode($utm_source); ?>" hidden>
+                                <input type="text" name="utm_medium" id="utm_medium"
+                                    value="<?php echo base64_encode($utm_medium) ?>" hidden>
+                                <input type="text" name="utm_campaign" id="utm_campaign"
+                                    value="<?php echo $utm_campaign ?>" hidden>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label text-dark" for="flexCheckDefault">
-                                        By clicking on submit I allow Acadment to call me & send program information on Email/Phone.
+                                        By clicking on submit I allow Acadment to call me & send program information on
+                                        Email/Phone.
                                     </label>
                                 </div>
                                 <div class="form-group mb-3 d-flex justify-content-center">
-                                    <input type="submit" id="submitButton" name="submit" value="Apply Now" class="btn banner-button " />
+                                    <input type="submit" id="submitButton" name="submit" value="Apply Now"
+                                        class="btn banner-button " />
                                 </div>
                             </form>
 
@@ -1377,7 +1496,7 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
         };
 
 
-        $(".knowBtn").on("click", function() {
+        $(".knowBtn").on("click", function () {
             const key = $(this).data("key");
             const data = specializationData[key];
 
@@ -1385,7 +1504,7 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
             $("#specFullText").text(data.fullText);
         });
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             localStorage.setItem('verification_flag', '0');
 
             $('.specializations').slick({
@@ -1397,34 +1516,34 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 responsive: [{
-                        breakpoint: 1300,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-                            infinite: true,
-                        }
-                    },
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
+                    breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
                     }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
                 ]
             });
 
@@ -1432,12 +1551,12 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
             fetch_states();
 
             // When a state is selected, fetch its cities
-            $("#state").on("change", function() {
+            $("#state").on("change", function () {
                 fetch_city();
             });
 
             // Form submit
-            $("#modalLeadForm").on("submit", function(e) {
+            $("#modalLeadForm").on("submit", function (e) {
                 e.preventDefault();
 
                 // 🔍 Check verification flag
@@ -1480,7 +1599,7 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
                     type: "POST",
                     data: JSON.stringify(data),
                     contentType: "application/json",
-                    success: function(response) {
+                    success: function (response) {
                         console.log(response);
                         if (response.status === "success") {
                             window.location.href = "thank-you.php";
@@ -1490,7 +1609,7 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
                             alert("⚠️ Unexpected response from server.");
                         }
                     },
-                    error: function(xhr, status, error) {
+                    error: function (xhr, status, error) {
                         console.error(error);
                         alert("❌ Error submitting form. Please try again later.");
                     }
@@ -1505,7 +1624,7 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
                 type: "POST",
                 url: "https://insityapp.com/dbFiles/fetch_states.php",
                 dataType: "json",
-                success: function(response) {
+                success: function (response) {
                     var names = response.states;
                     var state = $("#state");
                     state.empty().append('<option value="">Select State</option>');
@@ -1517,7 +1636,7 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
                         }));
                     }
                 },
-                error: function(error) {
+                error: function (error) {
                     console.error("Error fetching states:", error);
                 }
             });
@@ -1532,7 +1651,7 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
                     state: state
                 },
                 dataType: "json",
-                success: function(response) {
+                success: function (response) {
                     var names = response.cities;
                     var city = $(".city");
                     city.empty().append('<option value="">Select City</option>');
@@ -1544,24 +1663,24 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
                         }));
                     }
                 },
-                error: function(error) {
+                error: function (error) {
                     console.error("Error fetching cities:", error);
                 }
             });
         }
 
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             var phoneInput = document.getElementById("phone");
             var otp = document.getElementById("otp");
 
-            phoneInput.addEventListener("input", function() {
+            phoneInput.addEventListener("input", function () {
                 var phoneNumber = phoneInput.value;
                 if (phoneNumber.length === 10) {
                     generateOTP();
                 }
             });
 
-            otp.addEventListener("input", function() {
+            otp.addEventListener("input", function () {
                 var otpNumber = otp.value;
                 if (otpNumber.length === 6) {
                     otp_verify();
@@ -1587,7 +1706,7 @@ The online MBA in Human Resource Management (HRM) from D.Y. Patil University is 
                     mobile_no: mobile_no,
                     otp: verification_code
                 },
-                success: function(response) {
+                success: function (response) {
                     var result = response.status;
                     if (result == 1) {
                         $("#otpdiv").show();

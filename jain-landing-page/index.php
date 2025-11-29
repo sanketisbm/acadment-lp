@@ -22,6 +22,35 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '647703537631450');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=647703537631450&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Jain Uni LP – Microsoft Code -->
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "ud3jfkv9lw");
+    </script>
+    <!-- End Jain Uni LP – Microsoft Code -->
 
     <style>
         body {
@@ -38,13 +67,12 @@
             <div class="container-fluid mx-auto nav-container">
 
                 <!-- Brand / Logo -->
-                <a class="navbar-brand d-flex align-items-center ms-2 ms-md-0" href="/">
+                <div class="navbar-brand d-flex align-items-center ms-2 ms-md-0">
                     <img src="assets/images/logos/ju-white-logo.svg" alt="jainLogo" class="d-none d-md-block"
                         style="width:224px;height:60px;object-fit:contain;">
                     <img src="assets/images/logos/ju-white-logo.svg" alt="jainLogo" class="d-md-none"
                         style="width:143px;height:23px;object-fit:contain;">
-                </a>
-
+                </div>
 
                 <!-- RIGHT GROUP -->
                 <div class="d-flex align-items-md-center right-stack ms-md-auto">
@@ -55,9 +83,10 @@
                         Apply Now
                     </button>
 
-                    <button type="button" class="nav-pill-btn btn text-decoration-none download-brochure-btn">
+                    <a href="assets/brochure/JU - Program Brochure-MBA.pdf"
+                        class="nav-pill-btn btn text-decoration-none download-brochure-btn" download>
                         Download Brochure
-                    </button>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -217,562 +246,514 @@
                 <!-- Elective Card -->
                 <div class="col-12 col-md-6 col-lg-4 elective-item">
                     <div class="elective-card position-relative h-100">
+                        <!-- Desktop image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/Human_Resource_Management_and_Finance.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
 
-                        <a href="#" class="d-block position-relative">
+                        <!-- Mobile image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/Human_Resource_Management_and_Finance.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
 
-                            <!-- Desktop image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/Human_Resource_Management_and_Finance.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
-
-                            <!-- Mobile image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/Human_Resource_Management_and_Finance.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
-
-                            <!-- Overlay content -->
-                            <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
-                                <h2 class="elective-card-title h5 h4-md text-white mb-2">
-                                    MBA in Finance and Marketing
-                                </h2>
-                                <p class="elective-text text-white mb-2">
-                                    Explore how an online degree in finance and marketing equips you with dual expertise
-                                    to drive
-                                    financial strategies and execute impactful marketing campaigns for business success.
-                                </p>
-                                <div
-                                    class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-school text-white fs-6 mb-1"></i>
-                                        <p class="electives-stats text-white mb-0">MBA</p>
-                                    </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-clock text-white fs-6"></i>
-                                        <p class="electives-stats text-white mb-0">2 Years</p>
-                                    </div>
+                        <!-- Overlay content -->
+                        <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
+                            <h2 class="elective-card-title h5 h4-md text-white mb-2">
+                                MBA in Finance and Marketing
+                            </h2>
+                            <p class="elective-text text-white mb-2">
+                                Explore how an online degree in finance and marketing equips you with dual expertise
+                                to drive
+                                financial strategies and execute impactful marketing campaigns for business success.
+                            </p>
+                            <div
+                                class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-school text-white fs-6 mb-1"></i>
+                                    <p class="electives-stats text-white mb-0">MBA</p>
                                 </div>
-                                <button type="button" class="elective-link">
-                                    Know more
-                                </button>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-clock text-white fs-6"></i>
+                                    <p class="electives-stats text-white mb-0">2 Years</p>
+                                </div>
                             </div>
-
-                        </a>
+                            <button type="button" class="elective-link" data-bs-toggle="modal"
+                                data-bs-target="#applyOnlineModal">
+                                Know more
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4 elective-item">
                     <div class="elective-card position-relative h-100">
+                        <!-- Desktop image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/Finance_and_Marketing.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
 
-                        <a href="/online-mba/finance-and-marketing" class="d-block position-relative">
+                        <!-- Mobile image -->
+                        <img src="https://api.onlinejain.com/media/elective/mobile_image/Finance_and_Marketing.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
 
-                            <!-- Desktop image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/Finance_and_Marketing.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
-
-                            <!-- Mobile image -->
-                            <img src="https://api.onlinejain.com/media/elective/mobile_image/Finance_and_Marketing.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
-
-                            <!-- Overlay content -->
-                            <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
-                                <h2 class="elective-card-title h5 h4-md text-white mb-2">
-                                    MBA in Human Resource Management and Finance
-                                </h2>
-                                <p class="elective-text text-white mb-2">
-                                    Discover how an online degree in HRM and finance combines talent management with
-                                    financial
-                                    expertise for organizational success.
-                                </p>
-                                <div
-                                    class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-school text-white fs-6 mb-1"></i>
-                                        <p class=" electives-stats text-white mb-0">MBA</p>
-                                    </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-clock text-white fs-6"></i>
-                                        <p class="electives-stats text-white mb-0">2 Years</p>
-                                    </div>
+                        <!-- Overlay content -->
+                        <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
+                            <h2 class="elective-card-title h5 h4-md text-white mb-2">
+                                MBA in Human Resource Management and Finance
+                            </h2>
+                            <p class="elective-text text-white mb-2">
+                                Discover how an online degree in HRM and finance combines talent management with
+                                financial
+                                expertise for organizational success.
+                            </p>
+                            <div
+                                class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-school text-white fs-6 mb-1"></i>
+                                    <p class=" electives-stats text-white mb-0">MBA</p>
                                 </div>
-                                <button type="button" class="elective-link">
-                                    Know more
-                                </button>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-clock text-white fs-6"></i>
+                                    <p class="electives-stats text-white mb-0">2 Years</p>
+                                </div>
                             </div>
-
-                        </a>
+                            <button type="button" class="elective-link" data-bs-toggle="modal"
+                                data-bs-target="#applyOnlineModal">
+                                Know more
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4 elective-item">
                     <div class="elective-card position-relative h-100">
+                        <!-- Desktop image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/Marketing_and_Human_Resource_Management.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
 
-                        <a href="/online-mba/finance-and-marketing" class="d-block position-relative">
+                        <!-- Mobile image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/Marketing_and_Human_Resource_Management.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
 
-                            <!-- Desktop image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/Marketing_and_Human_Resource_Management.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
-
-                            <!-- Mobile image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/Marketing_and_Human_Resource_Management.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
-
-                            <!-- Overlay content -->
-                            <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
-                                <h2 class="elective-card-title h5 h4-md text-white mb-2">
-                                    MBA in Marketing and Human Resource Management
-                                </h2>
-                                <p class="elective-text text-white mb-2">
-                                    Explore how an online degree in marketing and human resource management equips
-                                    you
-                                    with dual
-                                    expertise in management, combining branding and talent management for overall
-                                    business success.
-                                </p>
-                                <div
-                                    class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-school text-white fs-6 mb-1"></i>
-                                        <p class=" electives-stats text-white mb-0">MBA</p>
-                                    </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-clock text-white fs-6"></i>
-                                        <p class="electives-stats text-white mb-0">2 Years</p>
-                                    </div>
+                        <!-- Overlay content -->
+                        <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
+                            <h2 class="elective-card-title h5 h4-md text-white mb-2">
+                                MBA in Marketing and Human Resource Management
+                            </h2>
+                            <p class="elective-text text-white mb-2">
+                                Explore how an online degree in marketing and human resource management equips
+                                you
+                                with dual
+                                expertise in management, combining branding and talent management for overall
+                                business success.
+                            </p>
+                            <div
+                                class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-school text-white fs-6 mb-1"></i>
+                                    <p class=" electives-stats text-white mb-0">MBA</p>
                                 </div>
-                                <button type="button" class="elective-link">
-                                    Know more
-                                </button>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-clock text-white fs-6"></i>
+                                    <p class="electives-stats text-white mb-0">2 Years</p>
+                                </div>
                             </div>
-
-                        </a>
+                            <button type="button" class="elective-link" data-bs-toggle="modal"
+                                data-bs-target="#applyOnlineModal">
+                                Know more
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4 elective-item">
                     <div class="elective-card position-relative h-100">
+                        <!-- Desktop image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_Marketing_and_Business_Analytics.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
 
-                        <a href="/online-mba/finance-and-marketing" class="d-block position-relative">
+                        <!-- Mobile image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_Marketing_and_Business_Analytics.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
 
-                            <!-- Desktop image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_Marketing_and_Business_Analytics.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
-
-                            <!-- Mobile image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_Marketing_and_Business_Analytics.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
-
-                            <!-- Overlay content -->
-                            <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
-                                <h2 class="elective-card-title h5 h4-md text-white mb-2">
-                                    MBA in Marketing and Business Analytics
-                                </h2>
-                                <p class="elective-text text-white mb-2">
-                                    Discover how our online MBA in Marketing and Business Analytics empowers you to
-                                    leverage data-
-                                    driven insights, craft innovative marketing strategies, and drive business
-                                    growth in
-                                    a dynamic digital
-                                    landscape.
-                                </p>
-                                <div
-                                    class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-school text-white fs-6 mb-1"></i>
-                                        <p class=" electives-stats text-white mb-0">MBA</p>
-                                    </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-clock text-white fs-6"></i>
-                                        <p class="electives-stats text-white mb-0">2 Years</p>
-                                    </div>
+                        <!-- Overlay content -->
+                        <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
+                            <h2 class="elective-card-title h5 h4-md text-white mb-2">
+                                MBA in Marketing and Business Analytics
+                            </h2>
+                            <p class="elective-text text-white mb-2">
+                                Discover how our online MBA in Marketing and Business Analytics empowers you to
+                                leverage data-
+                                driven insights, craft innovative marketing strategies, and drive business
+                                growth in
+                                a dynamic digital
+                                landscape.
+                            </p>
+                            <div
+                                class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-school text-white fs-6 mb-1"></i>
+                                    <p class=" electives-stats text-white mb-0">MBA</p>
                                 </div>
-                                <button type="button" class="elective-link">
-                                    Know more
-                                </button>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-clock text-white fs-6"></i>
+                                    <p class="electives-stats text-white mb-0">2 Years</p>
+                                </div>
                             </div>
-
-                        </a>
+                            <button type="button" class="elective-link" data-bs-toggle="modal"
+                                data-bs-target="#applyOnlineModal">
+                                Know more
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4 elective-item">
                     <div class="elective-card position-relative h-100">
+                        <!-- Desktop image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_Finance_and_Business_Analytics.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
 
-                        <a href="/online-mba/finance-and-marketing" class="d-block position-relative">
+                        <!-- Mobile image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_Finance_and_Business_Analytics.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
 
-                            <!-- Desktop image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_Finance_and_Business_Analytics.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
-
-                            <!-- Mobile image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_Finance_and_Business_Analytics.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
-
-                            <!-- Overlay content -->
-                            <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
-                                <h2 class="elective-card-title h5 h4-md text-white mb-2">
-                                    MBA in Finance and Business Analytics
-                                </h2>
-                                <p class="elective-text text-white mb-2">
-                                    Unlock the power of financial data with our online MBA in Finance and Business
-                                    Analytics, equipping
-                                    you with analytical expertise, strategic decision-making skills, and the ability
-                                    to
-                                    navigate complex
-                                    financial landscapes.
-                                </p>
-                                <div
-                                    class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-school text-white fs-6 mb-1"></i>
-                                        <p class=" electives-stats text-white mb-0">MBA</p>
-                                    </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-clock text-white fs-6"></i>
-                                        <p class="electives-stats text-white mb-0">2 Years</p>
-                                    </div>
+                        <!-- Overlay content -->
+                        <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
+                            <h2 class="elective-card-title h5 h4-md text-white mb-2">
+                                MBA in Finance and Business Analytics
+                            </h2>
+                            <p class="elective-text text-white mb-2">
+                                Unlock the power of financial data with our online MBA in Finance and Business
+                                Analytics, equipping
+                                you with analytical expertise, strategic decision-making skills, and the ability
+                                to
+                                navigate complex
+                                financial landscapes.
+                            </p>
+                            <div
+                                class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-school text-white fs-6 mb-1"></i>
+                                    <p class=" electives-stats text-white mb-0">MBA</p>
                                 </div>
-                                <button type="button" class="elective-link">
-                                    Know more
-                                </button>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-clock text-white fs-6"></i>
+                                    <p class="electives-stats text-white mb-0">2 Years</p>
+                                </div>
                             </div>
-
-                        </a>
+                            <button type="button" class="elective-link" data-bs-toggle="modal"
+                                data-bs-target="#applyOnlineModal">
+                                Know more
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4 elective-item">
                     <div class="elective-card position-relative h-100">
+                        <!-- Desktop image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_HR_and_Business_Analytics.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
 
-                        <a href="/online-mba/finance-and-marketing" class="d-block position-relative">
+                        <!-- Mobile image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_HR_and_Business_Analytics.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
 
-                            <!-- Desktop image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_HR_and_Business_Analytics.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
-
-                            <!-- Mobile image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_HR_and_Business_Analytics.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
-
-                            <!-- Overlay content -->
-                            <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
-                                <h2 class="elective-card-title h5 h4-md text-white mb-2">
-                                    MBA in Human Resource and Business Analytics
-                                </h2>
-                                <p class="elective-text text-white mb-2">
-                                    Transform HR decision-making with our online MBA in HR and Business Analytics,
-                                    combining
-                                    workforce analytics, strategic talent management, and data-driven insights to
-                                    optimize
-                                    organizational performance.
-                                </p>
-                                <div
-                                    class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-school text-white fs-6 mb-1"></i>
-                                        <p class=" electives-stats text-white mb-0">MBA</p>
-                                    </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-clock text-white fs-6"></i>
-                                        <p class="electives-stats text-white mb-0">2 Years</p>
-                                    </div>
+                        <!-- Overlay content -->
+                        <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
+                            <h2 class="elective-card-title h5 h4-md text-white mb-2">
+                                MBA in Human Resource and Business Analytics
+                            </h2>
+                            <p class="elective-text text-white mb-2">
+                                Transform HR decision-making with our online MBA in HR and Business Analytics,
+                                combining
+                                workforce analytics, strategic talent management, and data-driven insights to
+                                optimize
+                                organizational performance.
+                            </p>
+                            <div
+                                class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-school text-white fs-6 mb-1"></i>
+                                    <p class=" electives-stats text-white mb-0">MBA</p>
                                 </div>
-                                <button type="button" class="elective-link">
-                                    Know more
-                                </button>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-clock text-white fs-6"></i>
+                                    <p class="electives-stats text-white mb-0">2 Years</p>
+                                </div>
                             </div>
-
-                        </a>
+                            <button type="button" class="elective-link" data-bs-toggle="modal"
+                                data-bs-target="#applyOnlineModal">
+                                Know more
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4 elective-item">
                     <div class="elective-card position-relative h-100">
+                        <!-- Desktop image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/Project_Management.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
 
-                        <a href="/online-mba/finance-and-marketing" class="d-block position-relative">
+                        <!-- Mobile image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/Project_Management.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
 
-                            <!-- Desktop image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/Project_Management.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
-
-                            <!-- Mobile image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/Project_Management.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
-
-                            <!-- Overlay content -->
-                            <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
-                                <h2 class="elective-card-title h5 h4-md text-white mb-2">
-                                    MBA in Project Management
-                                </h2>
-                                <p class="elective-text text-white mb-2">
-                                    Explore how an online degree in project management equips you with the skills to
-                                    lead, plan, and
-                                    execute projects efficiently, ensuring successful outcomes in diverse business
-                                    environments.
-                                </p>
-                                <div
-                                    class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-school text-white fs-6 mb-1"></i>
-                                        <p class=" electives-stats text-white mb-0">MBA</p>
-                                    </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-clock text-white fs-6"></i>
-                                        <p class="electives-stats text-white mb-0">2 Years</p>
-                                    </div>
+                        <!-- Overlay content -->
+                        <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
+                            <h2 class="elective-card-title h5 h4-md text-white mb-2">
+                                MBA in Project Management
+                            </h2>
+                            <p class="elective-text text-white mb-2">
+                                Explore how an online degree in project management equips you with the skills to
+                                lead, plan, and
+                                execute projects efficiently, ensuring successful outcomes in diverse business
+                                environments.
+                            </p>
+                            <div
+                                class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-school text-white fs-6 mb-1"></i>
+                                    <p class=" electives-stats text-white mb-0">MBA</p>
                                 </div>
-                                <button type="button" class="elective-link">
-                                    Know more
-                                </button>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-clock text-white fs-6"></i>
+                                    <p class="electives-stats text-white mb-0">2 Years</p>
+                                </div>
                             </div>
-
-                        </a>
+                            <button type="button" class="elective-link" data-bs-toggle="modal"
+                                data-bs-target="#applyOnlineModal">
+                                Know more
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4 elective-item">
                     <div class="elective-card position-relative h-100">
+                        <!-- Desktop image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/Information_Technology_Management.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
 
-                        <a href="/online-mba/finance-and-marketing" class="d-block position-relative">
+                        <!-- Mobile image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/Information_Technology_Management.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
 
-                            <!-- Desktop image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/Information_Technology_Management.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
-
-                            <!-- Mobile image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/Information_Technology_Management.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
-
-                            <!-- Overlay content -->
-                            <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
-                                <h2 class="elective-card-title h5 h4-md text-white mb-2">
-                                    MBA in
-                                    Information Technology Management
-                                </h2>
-                                <p class="elective-text text-white mb-2">
-                                    Discover how an online degree in information technology management empowers you to
-                                    lead IT
-                                    strategies, drive innovation, and optimize technological resources for
-                                    organizational success.
-                                </p>
-                                <div
-                                    class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-school text-white fs-6 mb-1"></i>
-                                        <p class=" electives-stats text-white mb-0">MBA</p>
-                                    </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-clock text-white fs-6"></i>
-                                        <p class="electives-stats text-white mb-0">2 Years</p>
-                                    </div>
+                        <!-- Overlay content -->
+                        <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
+                            <h2 class="elective-card-title h5 h4-md text-white mb-2">
+                                MBA in
+                                Information Technology Management
+                            </h2>
+                            <p class="elective-text text-white mb-2">
+                                Discover how an online degree in information technology management empowers you to
+                                lead IT
+                                strategies, drive innovation, and optimize technological resources for
+                                organizational success.
+                            </p>
+                            <div
+                                class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-school text-white fs-6 mb-1"></i>
+                                    <p class=" electives-stats text-white mb-0">MBA</p>
                                 </div>
-                                <button type="button" class="elective-link">
-                                    Know more
-                                </button>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-clock text-white fs-6"></i>
+                                    <p class="electives-stats text-white mb-0">2 Years</p>
+                                </div>
                             </div>
-
-                        </a>
+                            <button type="button" class="elective-link" data-bs-toggle="modal"
+                                data-bs-target="#applyOnlineModal">
+                                Know more
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4 elective-item">
                     <div class="elective-card position-relative h-100">
+                        <!-- Desktop image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_Supply_Chain_Production_and_Operations_Management.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
 
-                        <a href="/online-mba/finance-and-marketing" class="d-block position-relative">
+                        <!-- Mobile image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_Supply_Chain_Production_and_Operations_Management.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
 
-                            <!-- Desktop image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_Supply_Chain_Production_and_Operations_Management.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
-
-                            <!-- Mobile image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_Supply_Chain_Production_and_Operations_Management.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
-
-                            <!-- Overlay content -->
-                            <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
-                                <h2 class="elective-card-title h5 h4-md text-white mb-2">
-                                    MBA in
-                                    Supply Chain, Production and Operations Management
-                                </h2>
-                                <p class="elective-text text-white mb-2">
-                                    Gain expertise in optimizing supply chains, streamlining operations, and enhancing
-                                    production
-                                    efficiency with our online MBA, preparing you to drive business success in a
-                                    competitive global
-                                    market.
-                                </p>
-                                <div
-                                    class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-school text-white fs-6 mb-1"></i>
-                                        <p class=" electives-stats text-white mb-0">MBA</p>
-                                    </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-clock text-white fs-6"></i>
-                                        <p class="electives-stats text-white mb-0">2 Years</p>
-                                    </div>
+                        <!-- Overlay content -->
+                        <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
+                            <h2 class="elective-card-title h5 h4-md text-white mb-2">
+                                MBA in
+                                Supply Chain, Production and Operations Management
+                            </h2>
+                            <p class="elective-text text-white mb-2">
+                                Gain expertise in optimizing supply chains, streamlining operations, and enhancing
+                                production
+                                efficiency with our online MBA, preparing you to drive business success in a
+                                competitive global
+                                market.
+                            </p>
+                            <div
+                                class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-school text-white fs-6 mb-1"></i>
+                                    <p class=" electives-stats text-white mb-0">MBA</p>
                                 </div>
-                                <button type="button" class="elective-link">
-                                    Know more
-                                </button>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-clock text-white fs-6"></i>
+                                    <p class="electives-stats text-white mb-0">2 Years</p>
+                                </div>
                             </div>
-
-                        </a>
+                            <button type="button" class="elective-link" data-bs-toggle="modal"
+                                data-bs-target="#applyOnlineModal">
+                                Know more
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4 elective-item">
                     <div class="elective-card position-relative h-100">
+                        <!-- Desktop image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/Business_Intelligence__Analytics.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
 
-                        <a href="/online-mba/finance-and-marketing" class="d-block position-relative">
+                        <!-- Mobile image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/Business_Intelligence__Analytics.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
 
-                            <!-- Desktop image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/Business_Intelligence__Analytics.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
-
-                            <!-- Mobile image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/Business_Intelligence__Analytics.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
-
-                            <!-- Overlay content -->
-                            <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
-                                <h2 class="elective-card-title h5 h4-md text-white mb-2">
-                                    MBA in
-                                    Business Intelligence and Analytics
-                                </h2>
-                                <p class="elective-text text-white mb-2">
-                                    Discover how our online degree in business intelligence &amp; analytics will
-                                    transform you into a data-
-                                    driven maestro and enhances your decision-making abilities for organizational
-                                    success
-                                </p>
-                                <div
-                                    class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-school text-white fs-6 mb-1"></i>
-                                        <p class=" electives-stats text-white mb-0">MBA</p>
-                                    </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-clock text-white fs-6"></i>
-                                        <p class="electives-stats text-white mb-0">2 Years</p>
-                                    </div>
+                        <!-- Overlay content -->
+                        <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
+                            <h2 class="elective-card-title h5 h4-md text-white mb-2">
+                                MBA in
+                                Business Intelligence and Analytics
+                            </h2>
+                            <p class="elective-text text-white mb-2">
+                                Discover how our online degree in business intelligence &amp; analytics will
+                                transform you into a data-
+                                driven maestro and enhances your decision-making abilities for organizational
+                                success
+                            </p>
+                            <div
+                                class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-school text-white fs-6 mb-1"></i>
+                                    <p class=" electives-stats text-white mb-0">MBA</p>
                                 </div>
-                                <button type="button" class="elective-link">
-                                    Know more
-                                </button>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-clock text-white fs-6"></i>
+                                    <p class="electives-stats text-white mb-0">2 Years</p>
+                                </div>
                             </div>
-
-                        </a>
+                            <button type="button" class="elective-link" data-bs-toggle="modal"
+                                data-bs-target="#applyOnlineModal">
+                                Know more
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4 elective-item">
                     <div class="elective-card position-relative h-100">
+                        <!-- Desktop image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_Entrepreneurship_and_Venture_Creation.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
 
-                        <a href="/online-mba/finance-and-marketing" class="d-block position-relative">
+                        <!-- Mobile image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_Entrepreneurship_and_Venture_Creation.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
 
-                            <!-- Desktop image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_Entrepreneurship_and_Venture_Creation.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
-
-                            <!-- Mobile image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/MBA_Entrepreneurship_and_Venture_Creation.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
-
-                            <!-- Overlay content -->
-                            <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
-                                <h2 class="elective-card-title h5 h4-md text-white mb-2">
-                                    MBA in
-                                    Entrepreneurship and Venture Creation
-                                </h2>
-                                <p class="elective-text text-white mb-2">
-                                    Turn your business ideas into reality with our online MBA in Entrepreneurship and
-                                    Venture Creation,
-                                    equipping you with the skills to innovate, scale startups, and drive sustainable
-                                    business growth in
-                                    competitive markets.
-                                </p>
-                                <div
-                                    class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-school text-white fs-6 mb-1"></i>
-                                        <p class=" electives-stats text-white mb-0">MBA</p>
-                                    </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-clock text-white fs-6"></i>
-                                        <p class="electives-stats text-white mb-0">2 Years</p>
-                                    </div>
+                        <!-- Overlay content -->
+                        <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
+                            <h2 class="elective-card-title h5 h4-md text-white mb-2">
+                                MBA in
+                                Entrepreneurship and Venture Creation
+                            </h2>
+                            <p class="elective-text text-white mb-2">
+                                Turn your business ideas into reality with our online MBA in Entrepreneurship and
+                                Venture Creation,
+                                equipping you with the skills to innovate, scale startups, and drive sustainable
+                                business growth in
+                                competitive markets.
+                            </p>
+                            <div
+                                class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-school text-white fs-6 mb-1"></i>
+                                    <p class=" electives-stats text-white mb-0">MBA</p>
                                 </div>
-                                <button type="button" class="elective-link">
-                                    Know more
-                                </button>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-clock text-white fs-6"></i>
+                                    <p class="electives-stats text-white mb-0">2 Years</p>
+                                </div>
                             </div>
-
-                        </a>
+                            <button type="button" class="elective-link" data-bs-toggle="modal"
+                                data-bs-target="#applyOnlineModal">
+                                Know more
+                            </button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4 elective-item">
                     <div class="elective-card position-relative h-100">
+                        <!-- Desktop image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/International_Finance_Accredited_by_ACCAUK1.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
 
-                        <a href="/online-mba/finance-and-marketing" class="d-block position-relative">
+                        <!-- Mobile image -->
+                        <img src="https://api.onlinejain.com/media/elective/desktop_image/International_Finance_Accredited_by_ACCAUK1.webp"
+                            alt="Finance and Marketing"
+                            class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
 
-                            <!-- Desktop image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/International_Finance_Accredited_by_ACCAUK1.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-none d-md-block rounded-4 shadow-lg elective-img">
-
-                            <!-- Mobile image -->
-                            <img src="https://api.onlinejain.com/media/elective/desktop_image/International_Finance_Accredited_by_ACCAUK1.webp"
-                                alt="Finance and Marketing"
-                                class="img-fluid w-100 d-md-none rounded-4 shadow-lg elective-img">
-
-                            <!-- Overlay content -->
-                            <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
-                                <h2 class="elective-card-title h5 h4-md text-white mb-2">
-                                    MBA in International Finance (Accredited by ACCA, UK)
-                                </h2>
-                                <p class="elective-text text-white mb-2">
-                                    Explore how our online degree in international finance equips you with the knowledge
-                                    to navigate
-                                    global financial markets and succeed in the dynamic international finance landscape.
-                                </p>
-                                <div
-                                    class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-school text-white fs-6 mb-1"></i>
-                                        <p class=" electives-stats text-white mb-0">MBA</p>
-                                    </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <i class="ti ti-clock text-white fs-6"></i>
-                                        <p class="electives-stats text-white mb-0">2 Years</p>
-                                    </div>
+                        <!-- Overlay content -->
+                        <div class="elective-overlay position-absolute start-0 end-0 bottom-0 p-3 p-md-4">
+                            <h2 class="elective-card-title h5 h4-md text-white mb-2">
+                                MBA in International Finance (Accredited by ACCA, UK)
+                            </h2>
+                            <p class="elective-text text-white mb-2">
+                                Explore how our online degree in international finance equips you with the knowledge
+                                to navigate
+                                global financial markets and succeed in the dynamic international finance landscape.
+                            </p>
+                            <div
+                                class="d-flex justify-content-start align-items-center h-100 w-100 gap-3 gap-md-4 gap-lg-5 mb-2">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-school text-white fs-6 mb-1"></i>
+                                    <p class=" electives-stats text-white mb-0">MBA</p>
                                 </div>
-                                <button type="button" class="elective-link">
-                                    Know more
-                                </button>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <i class="ti ti-clock text-white fs-6"></i>
+                                    <p class="electives-stats text-white mb-0">2 Years</p>
+                                </div>
                             </div>
-
-                        </a>
+                            <button type="button" class="elective-link" data-bs-toggle="modal"
+                                data-bs-target="#applyOnlineModal">
+                                Know more
+                            </button>
+                        </div>
                     </div>
                 </div>
 
@@ -981,8 +962,7 @@
                 </div>
                 <div>
                     <div class="hiring-logo-card shadow d-flex justify-content-center align-items-center">
-                        <img src="assets/images/corporate/corporate-honeywell.webp" alt="Honeywell"
-                            class="img-fluid">
+                        <img src="assets/images/corporate/corporate-honeywell.webp" alt="Honeywell" class="img-fluid">
                     </div>
                 </div>
                 <div>
@@ -1062,8 +1042,7 @@
                 <div>
                     <div class="ranking-card">
                         <div class="ranking-logo">
-                            <img src="assets/images/recognitions/recognitions-ksurf.webp" alt="ACU"
-                                class="img-fluid">
+                            <img src="assets/images/recognitions/recognitions-ksurf.webp" alt="ACU" class="img-fluid">
                         </div>
                         <p class="ranking-text">
                             Awarded 5 Star Rating by Karnataka State Higher Education Council under KSURF
@@ -1354,54 +1333,42 @@
     </section>
 
     <section class="form-section py-5" id="form-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-10 col-lg-7 align-items-center">
-                    <div class="card-header py-0 mb-1" style="background-color: unset">
-                        <h1 class="subtitle-underline">Enroll Now</h1>
-                    </div>
-                    <div class="get-started-slug-section bg-backgorund-blue">
+        <div class="enroll-section bg-backgorund-blue">
 
-                        <div class="get-started-slug">
+            <div class="get-started-slug-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-7 col-lg-7">
+                            <div class="get-started-slug">
 
-                            <h2 class="get-started-slug-title">
-                                Get an Online MBA Degree at 1/3rd the cost of a traditional MBA
-                            </h2>
+                                <h2 class="get-started-slug-title">
+                                    Get an Online MBA Degree at 1/3rd the cost of a traditional MBA
+                                </h2>
 
-                            <p class="get-started-slug__subtitle">
-                                *Terms & Conditions applied
-                            </p>
+                                <p class="get-started-slug__subtitle">
+                                    *Terms & Conditions applied
+                                </p>
 
-                            <div class="slug-cta-wrapper">
+                                <div class="slug-cta-wrapper">
 
-                                <a tabindex="0" role="button"
-                                    class="get-started-btn open-form-btn open-form-pointer track-button-click-mp"
-                                    data-title="Get Started Banner" data-second-cta="download_brochure"
-                                    data-source="wlp_get_started">
-                                    GET STARTED
-                                </a>
-
-                                <div class="open-form-pointer">
-                                    Fill in the form to get started
-                                    <span class="show-right-arrow">
-                                        <img
-                                            src="https://d1vwxdpzbgdqj.cloudfront.net/enterprise/icons/arrow_right_white.svg" />
-                                    </span>
+                                    <button type="button"
+                                        class="get-started-btn btn border-0"
+                                        data-bs-toggle="modal" data-bs-target="#applyOnlineModal">
+                                        GET STARTED
+                                    </button>
                                 </div>
 
                             </div>
-
                         </div>
-
-                    </div>
-                </div>
-                <div class="col-12 col-md-10 col-lg-5">
-                    <div class="form-container form-bgc ">
-                        <div class="form-heading text-center text-white">
-                            <?php include 'form.php' ?>
+                        <div class="col-6 col-md-5 col-lg-5">
+                            <div class="get-started-slug-absolute-image">
+                                <img src="assets/images/young-graduate-cap-gown.png" alt="Enroll Now Image" />
+                            </div>
                         </div>
                     </div>
+
                 </div>
+
             </div>
         </div>
     </section>
@@ -1425,10 +1392,9 @@
     </div>
 
     <div class="apply-now1">
-        <button type="button" class="btn btn-primary enquire_now2" data-bs-toggle="modal"
-            data-bs-target="#exampleModal">
+        <a href="assets/brochure/JU - Program Brochure-MBA.pdf" class="btn btn-primary enquire_now2" download>
             DOWNLOAD BROCHURE
-        </button>
+        </a>
     </div>
 
     <div class="mobile-fixed-buttons d-md-none">
