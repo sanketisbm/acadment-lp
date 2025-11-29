@@ -1291,20 +1291,20 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="accordion-item">
+                    <div class="accordion-item">
                         <h2 class="accordion-header" id="faqHeadingFour">
                             <button class="accordion-button collapsed faq-question" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false"
                                 aria-controls="faqFour">
-                                <span>Do employers accept Online MBA in India?</span>
+                                <span>Is MBA worth it in 2026?</span>
                                 <i class="ti ti-chevron-down faq-toggle-icon"></i>
                             </button>
                         </h2>
                         <div id="faqFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body faq-answer">
-                                Yes, employers in India accept Online MBA degrees from reputable institutions,
-                                recognised by the University Grants Commission (UGC) and other accrediting bodies.
+                                Yes, an MBA equips you with leadership skills and industry insights, making it valuable
+                                in the evolving global job market.
                             </div>
                         </div>
                     </div>
@@ -1313,19 +1313,18 @@
                             <button class="accordion-button collapsed faq-question" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false"
                                 aria-controls="faqFive">
-                                <span>Is an Online MBA degree recognized equivalent to on- campus MBA?</span>
+                                <span>What is the eligibility criteria for online degree programs?</span>
                                 <i class="ti ti-chevron-down faq-toggle-icon"></i>
                             </button>
                         </h2>
                         <div id="faqFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body faq-answer">
-                                Yes, online MBA degrees from accredited institutions are recognized as equivalent to
-                                on-campus MBAs by employers and other academic institutions. The learning outcomes and
-                                curriculum are comparable, with the main difference being the delivery method.
+                                The minimum eligibility criteria for admission in online MBA programme is 50% in any
+                                Graduation from a Recognized University in any stream.
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
