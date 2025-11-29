@@ -1331,7 +1331,7 @@
         </div>
     </section>
 
-    <section class="form-section py-5" id="form-section">
+    <section class="form-section pt-5" id="form-section">
         <div class="enroll-section bg-backgorund-blue">
 
             <div class="get-started-slug-section">
