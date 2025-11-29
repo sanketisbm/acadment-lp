@@ -56,7 +56,7 @@
                         with you within the next 48 hours to provide the information you have requested. </p>
 
                     <a style="background: #ffd700; padding: 10px; color: #000; text-decoration: none; font-weight: 600; border-radius: 5px;"
-                        href="#">Download
+                        href="assets/brochure/JU - Program Brochure-MBA.pdf" target="_blank">Download
                         Brochure</a>
                 </div>
             </div>

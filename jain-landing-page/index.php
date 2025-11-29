@@ -83,10 +83,10 @@
                         Apply Now
                     </button>
 
-                    <a href="assets/brochure/JU - Program Brochure-MBA.pdf"
-                        class="nav-pill-btn btn text-decoration-none download-brochure-btn" download>
+                    <button class="nav-pill-btn btn text-decoration-none download-brochure-btn" data-bs-toggle="modal"
+                        data-bs-target="#applyOnlineModal">
                         Download Brochure
-                    </a>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -1351,9 +1351,8 @@
 
                                 <div class="slug-cta-wrapper">
 
-                                    <button type="button"
-                                        class="get-started-btn btn border-0"
-                                        data-bs-toggle="modal" data-bs-target="#applyOnlineModal">
+                                    <button type="button" class="get-started-btn btn border-0" data-bs-toggle="modal"
+                                        data-bs-target="#applyOnlineModal">
                                         GET STARTED
                                     </button>
                                 </div>
@@ -1392,9 +1391,10 @@
     </div>
 
     <div class="apply-now1">
-        <a href="assets/brochure/JU - Program Brochure-MBA.pdf" class="btn btn-primary enquire_now2" download>
+        <button type="button" class="btn btn-primary enquire_now2" data-bs-toggle="modal"
+            data-bs-target="#applyOnlineModal">
             DOWNLOAD BROCHURE
-        </a>
+        </button>
     </div>
 
     <div class="mobile-fixed-buttons d-md-none">
